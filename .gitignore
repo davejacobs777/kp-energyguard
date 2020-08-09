@@ -43,3 +43,6 @@ yarn-error.log*
 
 # Mac OSX Finder files.
 **/.DS_Store
+/.idea/kp-energyguard.iml
+/.idea/modules.xml
+/.idea/vcs.xml
