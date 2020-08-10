@@ -1,0 +1,49 @@
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+
+$kf-primary: (
+  50 : #FBFCFD,
+  100 : #F3F5F7,
+  200 : #E7EBEF,
+  300 : #C6CAD1,
+  400 : #999DA3,
+  500 : #5E6167,
+  600 : #444A58,
+  700 : #2F364A,
+  800 : #1D243B,
+  900 : #121831,
+  A100 : #5E6167,
+  A200 : #5E6167,
+  A400 : #5E6167,
+  A700 : #5E6167,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$kf-material-components-primary: mat-palette($kf-primary);
+$kf-material-components-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$kf-material-components-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$kf-material-components-theme: mat-light-theme(
+    $kf-material-components-primary,
+    $kf-material-components-accent,
+    $kf-material-components-warn
+);
