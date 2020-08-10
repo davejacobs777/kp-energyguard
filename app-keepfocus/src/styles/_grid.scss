@@ -1,0 +1,32 @@
+.header {
+  grid-area: header;
+  background-color: $color-white;
+  box-shadow: 2px 3px 7px rgba(94, 97, 103, 0.4);
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: $primary-500;
+}
+
+.main {
+  margin: $desktop-margin;
+  grid-area: main;
+  background-color: $color-white
+}
+
+.footer {
+  grid-area: footer;
+  background-color: $color-white;
+}
+
+.container {
+  background-color: $primary-200;
+  display: grid;
+  grid-template-columns: 60rem 1fr;
+  grid-template-rows: 16rem calc(100vh - 120px) 14rem;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "sidebar footer";
+}

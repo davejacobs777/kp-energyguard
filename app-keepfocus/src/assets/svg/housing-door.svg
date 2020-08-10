@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="housing-door" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<g id="g-door">
+	<path id="part2"  d="M15,0H5C3.9,0,3,0.9,3,2v18h14V2C17,0.9,16.1,0,15,0z M15,18H5V2h10V18z"/>
+	<rect id="part1" x="12" y="9"  width="2" height="2"/>
+</g>
+</svg>

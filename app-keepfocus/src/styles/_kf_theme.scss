@@ -35,15 +35,16 @@ $kf-primary: (
   )
 );
 
-$kf-material-components-primary: mat-palette($kf-primary);
-$kf-material-components-accent: mat-palette($mat-pink, A200, A100, A400);
+$kf-primary: mat-palette($kf-primary);
+$kf-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$kf-material-components-warn: mat-palette($mat-red);
+$kf-warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$kf-material-components-theme: mat-light-theme(
-    $kf-material-components-primary,
-    $kf-material-components-accent,
-    $kf-material-components-warn
+$kf-theme: mat-light-theme(
+    $kf-primary,
+    $kf-accent,
+    $kf-warn
 );
+

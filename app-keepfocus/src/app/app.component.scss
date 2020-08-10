@@ -1,7 +1,12 @@
 @import "variables";
 
-.header {
-  background-color: $kf-secondary;
-  height: 60px;
-  width: 100%
+.heading-1 {
+  font-size: 5.5rem; //22px
+  line-height: 6.5rem; //26px
+  font-weight: 400;
+}
+
+.heading-2 {
+  font-size: 5rem; //20px;
+  line-height: 6rem//24px;
 }

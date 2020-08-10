@@ -1,9 +1,21 @@
 $font-family: Roboto, "Helvetica Neue", sans-serif;
 $font-color: #313131;
-$white: #fff;
 
-$kf-primary: #5E6167;
 $kf-secondary: #FF5800;
-$kf-elec: #FCCE4B;
+$kf-electricity: #FCCE4B;
 $kf-water: #4D709A;
 $kf-heating: #2F9253;
+
+$desktop-margin: 6rem; //24px;
+
+// FONT
+$default-font-size: 4rem;
+
+$color-white: #fff;
+$color-black: #000;
+$primary-50: #FBFCFD; //group-bg
+$primary-100: #F7F8FA; //hover
+$primary-200: #E7EBEF; //selected / BG
+$primary-300: #C6CAD1; // borders
+$primary-400: #999DA3; // actions
+$primary-500: #5E6167; // primary
