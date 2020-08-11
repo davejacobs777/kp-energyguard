@@ -1,23 +1,110 @@
 .header {
+  padding: 4rem 6rem 4rem 4rem;
   grid-area: header;
   background-color: $color-white;
   box-shadow: 2px 3px 7px rgba(94, 97, 103, 0.4);
+  border-bottom: solid 0.5px $primary-300;
+  color: $primary-500;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  &__menu_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  &__logo {
+    margin-left: 8rem;
+    margin-right: auto;
+    &--image {
+      height: 36px;
+    }
+  }
+
+  &__icon_buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-button {
+    padding: 0 4rem;
+    height: 6rem;
+    border-right: solid 1px $primary-300;
+    color: pink;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    &--svg {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      align-self: flex-start;
+    }
+  }
+
+  &__icon_avatar {
+    margin: 0 3rem;
+  }
 }
 
 .sidebar {
+  padding: 4rem;
   grid-area: sidebar;
   background-color: $primary-500;
+
+  .mat-nav-list {
+
+    a.mat-list-item {
+      color: white;
+
+      .mat-list-item-content {
+        padding: 0;
+
+        .mat-icon {
+          color: white;
+          margin-right: 5rem;
+        }
+      }
+    }
+
+    a.mat-list-item:hover,
+    a.mat-list-item:active {
+      background: none;
+      color: $color-secondary;
+      transition: all .2s;
+
+      .mat-icon {
+        color: $color-secondary;
+        margin-right: 5rem;
+      }
+    }
+
+  }
 }
 
 .main {
   margin: $desktop-margin;
   grid-area: main;
-  background-color: $color-white
+  background-color: $color-white;
+  border-radius: 4px;
 }
 
 .footer {
   grid-area: footer;
   background-color: $color-white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {

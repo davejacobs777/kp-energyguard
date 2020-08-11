@@ -3,26 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatSliderModule} from "@angular/material/slider";
-import icons from '../assets/svg/svg-icons';
-import { SvgIconsModule } from '@ngneat/svg-icon';
+import { AvatarComponent } from './components/avatar/avatar.component';
+import {MatIconModule} from "@angular/material/icon";
+import {HttpClientModule} from "@angular/common/http";
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatListModule} from "@angular/material/list";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AvatarComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatSliderModule,
-    SvgIconsModule.forRoot({
-      sizes: {
-        sm: '18px',
-        md: '20px',
-        lg: '30px'
-      },
-      icons
-    })
+    MatIconModule,
+    HttpClientModule,
+    MatListModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
