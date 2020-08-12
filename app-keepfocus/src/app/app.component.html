@@ -1,9 +1,9 @@
-<div class="container">
-
+<!--[class.no-sidebar]="!isSidebarVisible"-->
+<div [ngClass]="containerClasses()">
 
   <header class="header">
     <div class="header__menu_button">
-      <a href="javascript:void(0)" class="sidenav-toggle">
+      <a href="javascript:void(0)" class="sidenav-toggle" (click)="onToggleSidebar()">
         <mat-icon aria-hidden="false" aria-label="Show - hide navbar">menu</mat-icon>
       </a>
     </div>
@@ -26,12 +26,7 @@
   </header>
 
 
-  <div class="sidebar">
-    <div class="sidebar__nav-header">
-      <a href="javascript:void(0)" class="sidebar__nav-header--close" (click)="closeSidenav()">
-        <mat-icon aria-hidden="false" aria-label="Example home icon">close</mat-icon>
-      </a>
-    </div>
+  <aside class="sidebar" [@slideInOut]="menuState">
 
     <mat-nav-list>
       <a mat-list-item routerLink="/dashboard" routerLinkActive="active" (click)="navigate()">
@@ -56,7 +51,32 @@
         <mat-icon>info</mat-icon> <span class="nav-caption">Documentation</span>
       </a>
     </mat-nav-list>
-  </div>
+
+<!--    <mat-nav-list>-->
+<!--      <a mat-list-item routerLink="/dashboard" routerLinkActive="active" (click)="navigate()">-->
+<!--        <mat-icon>dashboard</mat-icon>-->
+<!--      </a>-->
+<!--      <a mat-list-item routerLink="/installations" routerLinkActive="active" (click)="navigate()">-->
+<!--        <mat-icon svgIcon="installations" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>-->
+<!--      </a>-->
+<!--      <a mat-list-item routerLink="/search" routerLinkActive="active" (click)="navigate()">-->
+<!--        <mat-icon>search</mat-icon>-->
+<!--      </a>-->
+<!--      <a mat-list-item routerLink="/alarms" routerLinkActive="active" (click)="navigate()">-->
+<!--        <mat-icon svgIcon="alarms" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>-->
+<!--      </a>-->
+<!--      <a mat-list-item routerLink="/admin" routerLinkActive="active" (click)="navigate()">-->
+<!--        <mat-icon svgIcon="admin" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>-->
+<!--      </a>-->
+<!--      <a mat-list-item routerLink="/settings" routerLinkActive="active" (click)="navigate()">-->
+<!--        <mat-icon>settings</mat-icon>-->
+<!--      </a>-->
+<!--      <a mat-list-item routerLink="/documentation" routerLinkActive="active" (click)="navigate()">-->
+<!--        <mat-icon>info</mat-icon>-->
+<!--      </a>-->
+<!--    </mat-nav-list>-->
+
+  </aside>
 
 
   <div class="main">
