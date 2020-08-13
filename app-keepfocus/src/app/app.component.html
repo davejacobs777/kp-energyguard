@@ -8,25 +8,25 @@
     <!-- mat sidenav-->
     <mat-sidenav #sidenav [mode]="isDesktop ? 'push' : 'over'" [(opened)]="opened" class="sidebar">
       <mat-nav-list class="sidebar__nav-list">
-        <a mat-list-item routerLink="/dashboard" routerLinkActive="active" (click)="navigate()" class="sidebar__nav-list-link">
+        <a mat-list-item routerLink="/dashboard" routerLinkActive="active" class="sidebar__nav-list-link">
           <mat-icon>dashboard</mat-icon> <span>Dashboard</span>
         </a>
-        <a mat-list-item routerLink="/installations" routerLinkActive="active" (click)="navigate()" class="sidebar__nav-list-link">
+        <a mat-list-item routerLink="/installations" routerLinkActive="active" class="sidebar__nav-list-link">
           <mat-icon svgIcon="installations" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon> <span>Installations</span>
         </a>
-        <a mat-list-item routerLink="/search" routerLinkActive="active" (click)="navigate()" class="sidebar__nav-list-link">
+        <a mat-list-item routerLink="/search" routerLinkActive="active" class="sidebar__nav-list-link">
           <mat-icon>search</mat-icon> <span>Search</span>
         </a>
-        <a mat-list-item routerLink="/alarms" routerLinkActive="active" (click)="navigate()" class="sidebar__nav-list-link">
+        <a mat-list-item routerLink="/alarms" routerLinkActive="active" class="sidebar__nav-list-link">
           <mat-icon svgIcon="alarms" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon> <span>Alarms</span>
         </a>
-        <a mat-list-item routerLink="/admin" routerLinkActive="active" (click)="navigate()" class="sidebar__nav-list-link">
+        <a mat-list-item routerLink="/administration" routerLinkActive="active" class="sidebar__nav-list-link">
           <mat-icon svgIcon="admin" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon> <span>Administration</span>
         </a>
-        <a mat-list-item routerLink="/settings" routerLinkActive="active" (click)="navigate()" class="sidebar__nav-list-link">
+        <a mat-list-item routerLink="/settings" routerLinkActive="active" class="sidebar__nav-list-link">
           <mat-icon>settings</mat-icon> <span>Settings</span>
         </a>
-        <a mat-list-item routerLink="/documentation" routerLinkActive="active" (click)="navigate()" class="sidebar__nav-list-link">
+        <a mat-list-item routerLink="/documentation" routerLinkActive="active" class="sidebar__nav-list-link">
           <mat-icon>info</mat-icon> <span>Documentation</span>
         </a>
       </mat-nav-list>
@@ -38,7 +38,7 @@
     <mat-sidenav-content>
       <div class="content-container">
         <div class="main">
-          Main Content
+          <router-outlet></router-outlet>
         </div>
 
         <mat-toolbar class="footer">

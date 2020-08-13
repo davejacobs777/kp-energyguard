@@ -5,8 +5,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AvatarComponent } from './components/avatar/avatar.component';
 import {HttpClientModule} from "@angular/common/http";
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { InstallationsComponent } from './installations/installations.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {MaterialModule} from "./material/material.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
@@ -19,9 +17,7 @@ import { HeaderComponent } from './components/header/header.component';
   declarations: [
     AppComponent,
     AvatarComponent,
-    DashboardComponent,
-    InstallationsComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,10 +26,10 @@ import { HeaderComponent } from './components/header/header.component';
     MaterialModule,
     ReactiveFormsModule,
     HttpClientModule,
-    AppRoutingModule,
     MatOptionModule,
     MatFormFieldModule,
     MatSelectModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

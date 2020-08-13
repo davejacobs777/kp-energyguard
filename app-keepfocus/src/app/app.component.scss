@@ -14,6 +14,7 @@
   &__nav-list {
 
     &-link {
+      background: none;
       padding: 0;
       color: white;
 
@@ -36,6 +37,22 @@
       }
     }
 
+    &-link:active {
+      background: none;
+      color: $color-secondary;
+      transition: all .2s;
+    }
+
+  }
+}
+
+.active {
+  background: none;
+  color: $color-secondary;
+
+  .mat-icon {
+    color: $color-secondary;
+    margin-right: 2.5rem;
   }
 }
 
