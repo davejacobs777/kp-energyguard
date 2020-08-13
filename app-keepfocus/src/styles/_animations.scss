@@ -1,20 +1,2 @@
-@keyframes sidebarLeave {
-  0% {
-    grid-template-columns: 60rem 1fr;
-  }
 
-  100% {
-    grid-template-columns: 0 1fr;
-  }
-}
-
-@keyframes sidebarArrive {
-  0% {
-    transform: translate3d(-240px, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
 

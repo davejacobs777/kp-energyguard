@@ -2,11 +2,47 @@
 
 .mat-icon {
   color: $primary-500;
-  width: 5rem;
-  height: 5rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
+.sidebar {
+  width: 240px;
+  background-color: #5E6167;
+  padding: 2rem 0;
 
+  &__nav-list {
+
+    &-link {
+      padding: 0;
+      color: white;
+
+      .mat-icon {
+        color: white;
+        margin-right: 2.5rem;
+      }
+    }
+
+
+    &-link:hover,
+    &-link:active {
+      background: none;
+      color: $color-secondary;
+      transition: all .2s;
+
+      .mat-icon {
+        color: $color-secondary;
+        margin-right: 2.5rem;
+      }
+    }
+
+  }
+}
+
+//.mat-sidenav {
+//  width: 240px;
+//  background-color: $primary-500;
+//}
 
 .kf-container {
   background-color: $primary-200;
@@ -16,11 +52,6 @@
 .kf-sidenav-container {
   background-color: $primary-200;
   height: calc(100vh - 64px);
-}
-
-.mat-sidenav {
-  width: 240px;
-  background-color: $primary-500;
 }
 
 .content-container {
@@ -35,6 +66,9 @@
 
   .footer {
     height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

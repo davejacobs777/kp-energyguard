@@ -4,6 +4,12 @@
   position: relative;
 }
 
+.mat-icon {
+  color: $primary-500;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 .header {
   border-bottom: solid 0.5px $primary-300;
   background-color: #fff;
@@ -25,11 +31,11 @@
   }
 
   &__logo {
-    margin-left: 8rem;
+    margin-left: 4rem;
     margin-right: auto;
 
-    &--image {
-      height: 36px;
+    &-image {
+      height: 4.5rem;
     }
   }
 
@@ -39,25 +45,24 @@
   }
 
   &__icon-button {
-    padding: 0 4rem;
-    height: 6rem;
+    padding: 0 2rem;
+    height: 3rem;
     border-right: solid 1px $primary-300;
 
     display: flex;
-    flex-direction: column;
     align-items: center;
-    align-content: center;
-    justify-content: center;
 
-    &--svg {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      align-self: flex-start;
+    .mat-icon {
+      display: flex;
+
+      svg {
+        align-self: flex-start;
+      }
     }
+
   }
 
   &__icon_avatar {
-    margin: 0 3rem;
+    margin: 0 1.5rem;
   }
 }
