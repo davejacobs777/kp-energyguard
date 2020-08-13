@@ -1,49 +1,20 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {ChangeDetectorRef, Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {MatIconRegistry} from "@angular/material/icon";
 import {DomSanitizer} from "@angular/platform-browser";
-import {animate, state, style, transition, trigger} from "@angular/animations";
-import {BreakpointObserver} from "@angular/cdk/layout";
+import {BreakpointObserver, MediaMatcher} from "@angular/cdk/layout";
+import {UntilDestroy, untilDestroyed} from "@ngneat/until-destroy";
 import {map} from "rxjs/operators";
-import {Subscription} from "rxjs";
 
+@UntilDestroy()
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  animations: [
-    trigger("slideInOut", [
-      state(
-        "in",
-        style({
-          transform: "translate3d(0, 0, 0)"
-        })
-      ),
-      state(
-        "out",
-        style({
-          transform: "translate3d(-240px, 0, 0)"
-        })
-      ),
-      transition("in => out", animate("4000ms ease-in-out")),
-      transition("out => in", animate("4000ms ease-in-out"))
-    ])
-  ]
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, OnDestroy {
-  title = 'app-keepfocus';
+  isDesktop: boolean = true;
+  opened: boolean = true;
 
-  menuState: string = "out";
-
-  // For more than one observed breakpoint
-  // isSmallerThan900: boolean;
-  isLargerThan900: boolean;
-  // isSmallerThan1200: boolean;
-  // isLargerThan1200: boolean;
-
-  isSidebarVisible = true;
-  isRailVisible = false;
-  isNoSidebarVisible = false;
-  subscription: Subscription;
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, private breakpointObserver: BreakpointObserver) {
 
@@ -78,59 +49,35 @@ export class AppComponent implements OnInit, OnDestroy {
 
 
   ngOnInit(): void {
-    // MEDIA QUERY MANAGER
-    /*
-    0 - 600px:      Phone
-    600 - 900px:    Tablet portrait
-    900 - 1200px:   Tablet landscape
-    [1200 - 1800] is where our normal styles apply
-    1800px + :      Big desktop
-
-    $breakpoint arguement choices:
-    - phone
-    - tab-port
-    - tab-land
-    - big-desktop
-
-    ORDER: Base + typography > general layout + grid > page layout > components
-
-    1em = 16px
-    */
-    this.subscription = this.breakpointObserver
+    this.breakpointObserver
       .observe("(min-width: 900px)")
       .pipe(
+        untilDestroyed(this),
         map(result => result.matches)
       )
       .subscribe(matches => {
-        this.menuState = matches ? "in" : "out";
-        // this.isDesktop = matches;
-        console.log("Matches", matches, this.menuState);
+        this.isDesktop = matches;
+        if (this.isDesktop) {
+          this.opened = true;
+        } else {
+          this.opened = false;
+        }
+        console.log("Matches", matches, this.isDesktop);
       });
+  }
+
+
+  // Do not delete
+  ngOnDestroy() {
+
   }
 
   navigate() {
 
   }
 
-  onToggleSidebar() {
-    this.toggleMenuState();
-    this.isSidebarVisible = !this.isSidebarVisible;
+  onToggleSidenav() {
+    this.opened = !this.opened;
   }
 
-  private toggleMenuState() {
-    this.menuState = this.menuState === "out" ? "in" : "out";
-    console.log("Matches", this.menuState);
-  }
-
-  containerClasses() {
-    return {
-      'container--desk-sidebar': !(this.menuState === 'out'),
-      'container--no-sidebar': this.menuState === 'out'
-    }
-  }
-
-  // Do not delete
-  ngOnDestroy() {
-    this.subscription.unsubscribe();
-  }
 }

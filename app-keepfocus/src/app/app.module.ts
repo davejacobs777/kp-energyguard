@@ -4,23 +4,36 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AvatarComponent } from './components/avatar/avatar.component';
-import {MatIconModule} from "@angular/material/icon";
 import {HttpClientModule} from "@angular/common/http";
-import {MatSidenavModule} from "@angular/material/sidenav";
-import {MatListModule} from "@angular/material/list";
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { InstallationsComponent } from './installations/installations.component';
+import {AppRoutingModule} from "./app-routing.module";
+import {MaterialModule} from "./material/material.module";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {MatOptionModule} from "@angular/material/core";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatSelectModule} from "@angular/material/select";
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AvatarComponent
+    AvatarComponent,
+    DashboardComponent,
+    InstallationsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatIconModule,
+    FormsModule,
+    MaterialModule,
+    ReactiveFormsModule,
     HttpClientModule,
-    MatListModule,
-    MatSidenavModule
+    AppRoutingModule,
+    MatOptionModule,
+    MatFormFieldModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,3 +5,38 @@
   width: 5rem;
   height: 5rem;
 }
+
+
+
+.kf-container {
+  background-color: $primary-200;
+  height: 100vh;
+}
+
+.kf-sidenav-container {
+  background-color: $primary-200;
+  height: calc(100vh - 64px);
+}
+
+.mat-sidenav {
+  width: 240px;
+  background-color: $primary-500;
+}
+
+.content-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .main {
+    height: 100%;
+    flex: 1 1 auto;
+  }
+
+  .footer {
+    height: 56px;
+  }
+}
+
+
+

@@ -1,65 +1,8 @@
-.header {
-  padding: 4rem 6rem 4rem 4rem;
-  grid-area: header;
-  background-color: $color-white;
-  box-shadow: 2px 3px 7px rgba(94, 97, 103, 0.4);
-  border-bottom: solid 0.5px $primary-300;
-  color: $primary-500;
 
-  display: flex;
-  align-items: center;
-  align-content: center;
 
-  &__menu_button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-
-  &__logo {
-    margin-left: 8rem;
-    margin-right: auto;
-
-    &--image {
-      height: 36px;
-    }
-  }
-
-  &__icon_buttons {
-    display: flex;
-    align-items: center;
-  }
-
-  &__icon-button {
-    padding: 0 4rem;
-    height: 6rem;
-    border-right: solid 1px $primary-300;
-    color: pink;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-
-    &--svg {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      align-self: flex-start;
-    }
-  }
-
-  &__icon_avatar {
-    margin: 0 3rem;
-  }
-}
 
 .sidebar {
   padding: 4rem;
-  grid-area: sidebar;
   background-color: $primary-500;
 
   .mat-nav-list {
@@ -92,12 +35,7 @@
   }
 }
 
-.main {
-  margin: $desktop-margin;
-  grid-area: main;
-  background-color: $color-white;
-  border-radius: 4px;
-}
+
 
 .footer {
   grid-area: footer;
@@ -106,45 +44,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 56px;
 }
 
-//'container--desk-rail': false,
-//'container--desk-sidebar': true,
-//'container--no-sidebar': false
 
 
-.container--desk-sidebar {
-  background-color: $primary-200;
-  display: grid;
-  grid-template-columns: 60rem 1fr;
-  grid-template-rows: 16rem calc(100vh - 120px) 14rem;
-  grid-template-areas:
-    "header header"
-    "sidebar main"
-    "sidebar footer";
-}
 
-.container--desk-rail {
-  background-color: $primary-200;
-  display: grid;
-  grid-template-columns: 14rem 1fr;
-  grid-template-rows: 16rem calc(100vh - 120px) 14rem;
-  grid-template-areas:
-    "header header"
-    "sidebar main"
-    "sidebar footer";
-}
-
-.container--no-sidebar {
-  background-color: $primary-200;
-  display: grid;
-  grid-template-columns: 100vw;
-  grid-template-rows: 16rem calc(100vh - 120px) 14rem;
-  grid-template-areas:
-      "header"
-      "main"
-      "footer";
-}
 
 
 

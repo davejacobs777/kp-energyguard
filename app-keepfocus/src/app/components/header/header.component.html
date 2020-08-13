@@ -1,0 +1,23 @@
+<mat-toolbar class="header">
+  <div class="header__menu_button">
+    <a href="javascript:void(0)" class="sidenav-toggle" (click)="openSidenav()">
+      <mat-icon aria-hidden="false" aria-label="Show - hide navbar">menu</mat-icon>
+    </a>
+  </div>
+  <div class="header__logo">
+    <a href="#">
+      <img src="../assets/images/keepfocusLogo.svg" alt="" class="header__logo--image"/>
+    </a>
+  </div>
+  <div class="header__icon_buttons">
+    <div class="header__icon-button">
+      <mat-icon svgIcon="dashboard" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+    </div>
+    <div class="header__icon-button">
+      <mat-icon svgIcon="alarms" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+    </div>
+    <div class="header__icon_avatar">
+      <kf-avatar [name]="'John Doe'" [title]="'Title'" [size]="'small'"></kf-avatar>
+    </div>
+  </div>
+</mat-toolbar>
