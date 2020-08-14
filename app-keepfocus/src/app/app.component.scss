@@ -1,17 +1,6 @@
 @import "variables";
 
 
-.active {
-  background: none;
-  color: $color-secondary;
-
-  .mat-icon {
-    color: $color-secondary;
-    margin-right: 2.5rem;
-  }
-}
-
-
 .mat-icon {
   color: $primary-500;
   width: 2.5rem;
@@ -92,8 +81,10 @@
        causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
     flex: 1;
     height: 100%;
+
     display: flex;
     flex-direction: column;
+
     background-color: $primary-200;
 
     //kf-sidenav
@@ -136,32 +127,49 @@
         }
 
       }
+
+      .kf-nav-list .active {
+        background: none;
+        color: $color-secondary;
+
+        .mat-icon {
+          color: $color-secondary;
+          margin-right: 2.5rem;
+        }
+      }
     }
 
     //kf-sidenav-content
     .kf-sidenav-content {
-      height: 100%;
       flex: 1;
+      height: 100%;
+
       display: flex;
       flex-direction: column;
 
       //kf-content
       .kf-content {
         flex: 1;
+        height: 100%;
+
         display: flex;
         flex-direction: column;
-        height: 100%;
+
         //kf-main
         .kf-main {
           flex: 1;
-          display: flex;
           height: 100%;
+          position: relative;
+
+          display: flex;
+          flex-direction: column;
         }
 
         //kf-footer
         .kf-footer {
           display: flex;
           justify-content: center;
+          background-color: white;
         }
       }
     }
