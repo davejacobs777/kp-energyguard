@@ -13,7 +13,6 @@ import {map} from "rxjs/operators";
 })
 export class AppComponent implements OnInit, OnDestroy {
   isDesktop: boolean = true;
-  opened: boolean = true;
 
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, private breakpointObserver: BreakpointObserver) {
@@ -57,11 +56,6 @@ export class AppComponent implements OnInit, OnDestroy {
       )
       .subscribe(matches => {
         this.isDesktop = matches;
-        if (this.isDesktop) {
-          this.opened = true;
-        } else {
-          this.opened = false;
-        }
         console.log("Matches", matches, this.isDesktop);
       });
   }
@@ -74,10 +68,6 @@ export class AppComponent implements OnInit, OnDestroy {
 
   navigate() {
 
-  }
-
-  onToggleSidenav() {
-    this.opened = !this.opened;
   }
 
 }

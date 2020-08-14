@@ -1,66 +1,181 @@
-<div class="kf-container">
+<!--<div class="app-container">-->
 
-<kf-header (sidenavOpen)="onToggleSidenav()"></kf-header>
+<!--  &lt;!&ndash;<kf-header (sidenavOpen)="onToggleSidenav()"></kf-header>&ndash;&gt;-->
+<!--  <mat-toolbar class="header">-->
+<!--    Header-->
+<!--  </mat-toolbar>-->
 
-  <!-- mat sidenav container-->
-  <mat-sidenav-container class="kf-sidenav-container" [hasBackdrop]="!isDesktop">
+<!--  &lt;!&ndash; mat sidenav container&ndash;&gt;-->
+<!--  <mat-sidenav-container class="nav-container" [hasBackdrop]="!isDesktop">-->
 
-    <!-- mat sidenav-->
-    <mat-sidenav #sidenav [mode]="isDesktop ? 'push' : 'over'" [(opened)]="opened" class="sidebar">
-      <mat-nav-list class="sidebar__nav-list">
-        <a mat-list-item routerLink="/dashboard" routerLinkActive="active" class="sidebar__nav-list-link">
-          <mat-icon>dashboard</mat-icon> <span>Dashboard</span>
-        </a>
-        <a mat-list-item routerLink="/installations" routerLinkActive="active" class="sidebar__nav-list-link">
-          <mat-icon svgIcon="installations" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon> <span>Installations</span>
-        </a>
-        <a mat-list-item routerLink="/search" routerLinkActive="active" class="sidebar__nav-list-link">
-          <mat-icon>search</mat-icon> <span>Search</span>
-        </a>
-        <a mat-list-item routerLink="/alarms" routerLinkActive="active" class="sidebar__nav-list-link">
-          <mat-icon svgIcon="alarms" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon> <span>Alarms</span>
-        </a>
-        <a mat-list-item routerLink="/administration" routerLinkActive="active" class="sidebar__nav-list-link">
-          <mat-icon svgIcon="admin" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon> <span>Administration</span>
-        </a>
-        <a mat-list-item routerLink="/settings" routerLinkActive="active" class="sidebar__nav-list-link">
-          <mat-icon>settings</mat-icon> <span>Settings</span>
-        </a>
-        <a mat-list-item routerLink="/documentation" routerLinkActive="active" class="sidebar__nav-list-link">
-          <mat-icon>info</mat-icon> <span>Documentation</span>
-        </a>
+<!--    &lt;!&ndash; mat sidenav&ndash;&gt;-->
+<!--    <mat-sidenav #sidenav [mode]="isDesktop ? 'push' : 'over'" [(opened)]="opened" class="sidebar">-->
+<!--      <mat-nav-list class="sidebar__nav-list">-->
+<!--        <a mat-list-item routerLink="/dashboard" routerLinkActive="active" class="sidebar__nav-list-link">-->
+<!--          <mat-icon>dashboard</mat-icon>-->
+<!--          <span>Dashboard</span>-->
+<!--        </a>-->
+<!--        <a mat-list-item routerLink="/installations" routerLinkActive="active" class="sidebar__nav-list-link">-->
+<!--          <mat-icon svgIcon="installations" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>-->
+<!--          <span>Installations</span>-->
+<!--        </a>-->
+<!--        <a mat-list-item routerLink="/search" routerLinkActive="active" class="sidebar__nav-list-link">-->
+<!--          <mat-icon>search</mat-icon>-->
+<!--          <span>Search</span>-->
+<!--        </a>-->
+<!--        <a mat-list-item routerLink="/alarms" routerLinkActive="active" class="sidebar__nav-list-link">-->
+<!--          <mat-icon svgIcon="alarms" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>-->
+<!--          <span>Alarms</span>-->
+<!--        </a>-->
+<!--        <a mat-list-item routerLink="/administration" routerLinkActive="active" class="sidebar__nav-list-link">-->
+<!--          <mat-icon svgIcon="admin" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>-->
+<!--          <span>Administration</span>-->
+<!--        </a>-->
+<!--        <a mat-list-item routerLink="/settings" routerLinkActive="active" class="sidebar__nav-list-link">-->
+<!--          <mat-icon>settings</mat-icon>-->
+<!--          <span>Settings</span>-->
+<!--        </a>-->
+<!--        <a mat-list-item routerLink="/documentation" routerLinkActive="active" class="sidebar__nav-list-link">-->
+<!--          <mat-icon>info</mat-icon>-->
+<!--          <span>Documentation</span>-->
+<!--        </a>-->
+<!--      </mat-nav-list>-->
+<!--    </mat-sidenav>-->
+<!--    &lt;!&ndash; mat sidenav&ndash;&gt;-->
+
+
+<!--    &lt;!&ndash; mat sidenav content&ndash;&gt;-->
+<!--    <mat-sidenav-content>-->
+<!--      <div class="content-container">-->
+<!--        <div class="main">-->
+<!--          <router-outlet></router-outlet>-->
+<!--        </div>-->
+
+<!--        <mat-toolbar class="footer">-->
+<!--          <span class="mat-caption">-->
+<!--            &copy; Copyright 2020 | KeepFocus A/S-->
+<!--          </span>-->
+<!--        </mat-toolbar>-->
+<!--      </div>-->
+
+
+<!--    </mat-sidenav-content>-->
+<!--    &lt;!&ndash; mat sidenav content&ndash;&gt;-->
+
+
+<!--  </mat-sidenav-container>-->
+<!--  &lt;!&ndash; mat sidenav container&ndash;&gt;-->
+
+
+<!--</div>-->
+
+
+<div class="example-container" [class.example-is-mobile]="!this.isDesktop">
+  <mat-toolbar color="white" class="example-toolbar">
+    <button mat-icon-button (click)="snav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1 class="example-app-name">Responsive App</h1>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-sidenav-container"
+                         [style.marginTop.px]="!this.isDesktop ? 56 : 0">
+    <mat-sidenav #snav [mode]="!this.isDesktop ? 'over' : 'side'"
+                 [fixedInViewport]="!this.isDesktop" fixedTopGap="56">
+      <mat-nav-list>
+        <ul>
+          <li>top link</li>
+          <li>nav link</li>
+          <li>nav link</li>
+          <li>nav link</li>
+          <li>nav link</li>
+          <li>nav link</li>
+          <li>nav link</li>
+          <li>nav link</li>
+          <li>nav link</li>
+          <li>nav link</li>
+          <li>nav link</li>
+          <li>nav link</li>
+        </ul>
       </mat-nav-list>
     </mat-sidenav>
-    <!-- mat sidenav-->
 
-
-    <!-- mat sidenav content-->
     <mat-sidenav-content>
-      <div class="content-container">
-        <div class="main">
-          <router-outlet></router-outlet>
+      <div class="main-container">
+        <div class="main" style="margin: 24px">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate excepturi, iure laborum
+            libero tempora ullam? Alias assumenda deleniti, dolores dolorum, est ex harum impedit magni numquam quia sit
+            ut.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate excepturi, iure laborum
+            libero tempora ullam? Alias assumenda deleniti, dolores dolorum, est ex harum impedit magni numquam quia sit
+            ut.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate excepturi, iure laborum
+            libero tempora ullam? Alias assumenda deleniti, dolores dolorum, est ex harum impedit magni numquam quia sit
+            ut.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate excepturi, iure laborum
+            libero tempora ullam? Alias assumenda deleniti, dolores dolorum, est ex harum impedit magni numquam quia sit
+            ut.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate excepturi, iure laborum
+            libero tempora ullam? Alias assumenda deleniti, dolores dolorum, est ex harum impedit magni numquam quia sit
+            ut.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate excepturi, iure laborum
+            libero tempora ullam? Alias assumenda deleniti, dolores dolorum, est ex harum impedit magni numquam quia sit
+            ut.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate excepturi, iure laborum
+            libero tempora ullam? Alias assumenda deleniti, dolores dolorum, est ex harum impedit magni numquam quia sit
+            ut.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate excepturi, iure laborum
+            libero tempora ullam? Alias assumenda deleniti, dolores dolorum, est ex harum impedit magni numquam quia sit
+            ut.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate excepturi, iure laborum
+            libero tempora ullam? Alias assumenda deleniti, dolores dolorum, est ex harum impedit magni numquam quia sit
+            ut.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate excepturi, iure laborum
+            libero tempora ullam? Alias assumenda deleniti, dolores dolorum, est ex harum impedit magni numquam quia sit
+            ut.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate excepturi, iure laborum
+            libero tempora ullam? Alias assumenda deleniti, dolores dolorum, est ex harum impedit magni numquam quia sit
+            ut.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate excepturi, iure laborum
+            libero tempora ullam? Alias assumenda deleniti, dolores dolorum, est ex harum impedit magni numquam quia sit
+            ut.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate excepturi, iure laborum
+            libero tempora ullam? Alias assumenda deleniti, dolores dolorum, est ex harum impedit magni numquam quia sit
+            ut.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate excepturi, iure laborum
+            libero tempora ullam? Alias assumenda deleniti, dolores dolorum, est ex harum impedit magni numquam quia sit
+            ut.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate excepturi, iure laborum
+            libero tempora ullam? Alias assumenda deleniti, dolores dolorum, est ex harum impedit magni numquam quia sit
+            ut.
+          </p>
+
         </div>
-
-        <mat-toolbar class="footer">
-          <span class="mat-caption">
-            &copy; Copyright 2020 | KeepFocus A/S
-          </span>
-        </mat-toolbar>
+        <div class="footer">
+          <mat-toolbar color="white">
+            <p class="example-app-name">Responsive App</p>
+          </mat-toolbar>
+        </div>
       </div>
-
-
     </mat-sidenav-content>
-    <!-- mat sidenav content-->
-
-
-
-
   </mat-sidenav-container>
-  <!-- mat sidenav container-->
-
-
-
 </div>
+
+
 
 
 
