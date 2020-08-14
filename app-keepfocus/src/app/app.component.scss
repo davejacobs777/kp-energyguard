@@ -1,10 +1,5 @@
 @import "variables";
 
-.mat-icon {
-  color: $primary-500;
-  width: 2.5rem;
-  height: 2.5rem;
-}
 
 .active {
   background: none;
@@ -16,100 +11,166 @@
   }
 }
 
-.sidebar__nav-list {
 
-  &-link {
-    background: none;
-    padding: 0;
-    color: white;
-
-    .mat-icon {
-      color: white;
-      margin-right: 2.5rem;
-    }
-  }
-
-
-  &-link:hover,
-  &-link:active {
-    background: none;
-    color: $color-secondary;
-    transition: all .2s;
-
-    .mat-icon {
-      color: $color-secondary;
-      margin-right: 2.5rem;
-    }
-  }
-
-  &-link:active {
-    background: none;
-    color: $color-secondary;
-    transition: all .2s;
-  }
-
+.mat-icon {
+  color: $primary-500;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
-//.mat-sidenav {
-//  width: 240px;
-//  background-color: $primary-500;
-//}
 
-.example-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  position: relative;
-}
-
-.example-is-mobile .example-toolbar {
+//kf-toolbar
+.kf-is-mobile .kf-toolbar {
   position: fixed;
   /* Make sure the toolbar will stay on top of the content as it scrolls past. */
   z-index: 2;
 }
 
-h1.example-app-name {
-  margin-left: 8px;
-}
 
-.example-sidenav-container {
-  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
-     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
-  flex: 1;
-  height: 100%;
+//kf-container
+.kf-container {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  background-color: $primary-200;
 
-  .mat-sidenav-content {
-    height: 100%;
+  .kf-toolbar {
+    border-bottom: solid 0.5px $primary-300;
+    background-color: #fff;
+    box-shadow: 2px 3px 7px rgba(94, 97, 103, 0.4) !important;
+    z-index: 999;
+    color: $primary-500;
+
+    display: flex;
+    align-items: center;
+
+    &-menu_button {
+
+      .mat-icon {
+        color: $primary-500;
+      }
+    }
+
+    &-logo {
+      margin-left: 4rem;
+      margin-right: auto;
+
+      &-image {
+        height: 4.5rem;
+      }
+    }
+
+    &-group-right {
+      display: flex;
+      align-items: center;
+
+      &-button {
+        padding: 0 2rem;
+        height: 3rem;
+        border-right: solid 1px $primary-300;
+
+        display: flex;
+        align-items: center;
+
+        .mat-icon {
+          display: flex;
+
+          svg {
+            align-self: flex-start;
+          }
+        }
+
+      }
+
+      &-avatar {
+        margin: 0 1.5rem;
+      }
+    }
+  }
+
+  //kf-sidenav-container
+  .kf-sidenav-container {
+    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
     flex: 1;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: $primary-200;
 
-    .main-container {
+    //kf-sidenav
+    .kf-sidenav {
+      background-color: $primary-500;
+      width: 240px;
+      padding: 2rem 0;
+
+      //kf-nav-list
+      .kf-nav-list {
+
+        &-link {
+          background: none;
+          padding: 0;
+          color: white;
+
+          .mat-icon {
+            color: white;
+            margin-right: 2.5rem;
+          }
+        }
+
+
+        &-link:hover,
+        &-link:active {
+          background: none;
+          color: $color-secondary;
+          transition: all .2s;
+
+          .mat-icon {
+            color: $color-secondary;
+            margin-right: 2.5rem;
+          }
+        }
+
+        &-link:active {
+          background: none;
+          color: $color-secondary;
+          transition: all .2s;
+        }
+
+      }
+    }
+
+    //kf-sidenav-content
+    .kf-sidenav-content {
+      height: 100%;
       flex: 1;
       display: flex;
       flex-direction: column;
-      height: 100%;
-      .main {
-        flex: 1;
-      }
-      .footer {
 
+      //kf-content
+      .kf-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        //kf-main
+        .kf-main {
+          flex: 1;
+        }
+
+        //kf-footer
+        .kf-footer {
+          display: flex;
+          justify-content: center;
+        }
       }
     }
   }
 }
 
-mat-sidenav {
-  width: 240px;
-}
 
-mat-sidenav-content {
-  height: 100%;
-}
-
-.example-is-mobile .example-sidenav-container {
+.kf-is-mobile .kf-sidenav-container {
   /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
      `<body>` to be our scrolling element for mobile layouts. */
   flex: 1 0 auto;
