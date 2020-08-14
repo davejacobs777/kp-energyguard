@@ -2,9 +2,12 @@
 
 
   <mat-toolbar class="kf-toolbar">
-    <button mat-icon-button (click)="snav.toggle()" class="kf-toolbar-menu-button">
-      <mat-icon>menu</mat-icon>
-    </button>
+
+    <div class="kf-toolbar-menu-button">
+      <a href="javascript:void(0)" (click)="snav.toggle()">
+        <mat-icon aria-hidden="false" aria-label="Show - hide navbar">menu</mat-icon>
+      </a>
+    </div>
     <div class="kf-toolbar-logo">
       <a href="#">
         <img src="../assets/images/keepfocusLogo.svg" alt="" class="kf-toolbar-logo-image"/>
@@ -22,9 +25,6 @@
       </div>
     </div>
   </mat-toolbar>
-
-
-
 
 
   <mat-sidenav-container class="kf-sidenav-container"
