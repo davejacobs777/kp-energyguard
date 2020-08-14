@@ -1,9 +1,35 @@
+@import "variables";
+
 .installations-container {
+  flex: 1;
+
   padding: 3rem;
+
+  display: flex;
+  height: 100%;
 }
 
-.group-container {
+.group {
+  flex: 1;
   border-radius: 4px;
   background-color: white;
   padding: 3rem;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+
+  &-header {
+    flex: 0 0 72px;
+  }
+
+  &-subheader {
+    flex: 0 0 64px;
+  }
+
+  &-content {
+    flex: 1;
+    background-color: $primary-50;
+  }
 }
