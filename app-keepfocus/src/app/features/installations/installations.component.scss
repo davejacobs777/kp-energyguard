@@ -1,5 +1,19 @@
 @import "variables";
 
+.ThirtyPixelIcon {
+  color: $primary-500;
+  height: 28px;
+  width: 28px;
+  margin-right: 3rem;
+}
+
+.TwentyPixelIcon {
+  color: $primary-500;
+  height: 20px;
+  width: 20px;
+  margin-right: 2rem;
+}
+
 .installations-container {
   flex: 1;
   min-height: calc(100vh - 120px);

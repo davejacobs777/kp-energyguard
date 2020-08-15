@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InstallationsComponent } from './installations.component';
 import {InstallationsRoutingModule} from "./installations-routing.module";
+import {MaterialModule} from "../../material/material.module";
 
 
 
@@ -9,7 +10,8 @@ import {InstallationsRoutingModule} from "./installations-routing.module";
   declarations: [InstallationsComponent],
   imports: [
     CommonModule,
-    InstallationsRoutingModule
+    InstallationsRoutingModule,
+    MaterialModule
   ]
 })
 export class InstallationsModule { }

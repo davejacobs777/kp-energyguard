@@ -43,7 +43,8 @@ export class AppComponent implements OnInit, OnDestroy {
       .addSvgIcon('widget-close', sanitizer.bypassSecurityTrustResourceUrl('assets/svg/widget-close.svg'))
       .addSvgIcon('widget-list', sanitizer.bypassSecurityTrustResourceUrl('assets/svg/widget-list.svg'))
       .addSvgIcon('widget-move', sanitizer.bypassSecurityTrustResourceUrl('assets/svg/widget-move.svg'))
-      .addSvgIcon('widget-settings', sanitizer.bypassSecurityTrustResourceUrl('assets/svg/widget-settings.svg'));
+      .addSvgIcon('widget-settings', sanitizer.bypassSecurityTrustResourceUrl('assets/svg/widget-settings.svg'))
+      .addSvgIcon('company-28px', sanitizer.bypassSecurityTrustResourceUrl('assets/svg/company-28px.svg'));
   }
 
 
