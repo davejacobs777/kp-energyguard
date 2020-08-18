@@ -40,10 +40,28 @@
 
       display: flex;
       align-items: center;
+      margin-right: auto;
 
       h2 {
         display: inline-block;
         margin: 0;
+      }
+
+      .group-nav {
+
+        display: flex;
+
+        &-item {
+
+          &-icon
+          {
+
+          }
+
+          &-link {
+            text-decoration: none;
+          }
+        }
       }
 
     }
@@ -86,5 +104,9 @@
 //
 //  background-color: white;
 //}
+
+.example-tab-icon {
+  margin-right: 8px;
+}
 
 

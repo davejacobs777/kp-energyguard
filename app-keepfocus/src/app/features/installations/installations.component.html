@@ -6,6 +6,65 @@
       <h2 class="mat-headline">
         Company | Aarhus Omegns Boligforening
       </h2>
+
+      <div class="group-nav">
+        <!-- listing-->
+        <div class="group-nav-item">
+          <div class="group-nav-item-icon">
+            <mat-icon class="TwentyPixelIcon" svgIcon="listing" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+          </div>
+          <a routerLink="listing" routerLinkActive="active" class="group-nav-item-link">LISTING</a>
+        </div>
+
+        <!-- map-->
+        <div class="group-nav-item">
+          <div class="group-nav-item-icon">
+            <mat-icon class="TwentyPixelIcon" svgIcon="map" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+          </div>
+          <a routerLink="map" routerLinkActive="active" class="group-nav-item-link">MAP</a>
+        </div>
+
+        <!-- measure-->
+        <div class="group-nav-item">
+          <div class="group-nav-item-icon">
+            <mat-icon class="TwentyPixelIcon" svgIcon="measurements" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+          </div>
+          <a routerLink="measure" routerLinkActive="active" class="group-nav-item-link">MEASURE</a>
+        </div>
+
+        <!-- analyse-->
+        <div class="group-nav-item">
+          <div class="group-nav-item-icon">
+            <mat-icon class="TwentyPixelIcon" svgIcon="analysis" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+          </div>
+          <a routerLink="analyse" routerLinkActive="active" class="group-nav-item-link">ANALYSE</a>
+        </div>
+
+        <!-- alarms-->
+        <div class="group-nav-item">
+          <div class="group-nav-item-icon">
+            <mat-icon class="TwentyPixelIcon" svgIcon="alarm" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+          </div>
+          <a routerLink="alarms" routerLinkActive="active"class="group-nav-item-link">ALARM</a>
+        </div>
+
+        <!-- reports-->
+        <div class="group-nav-item">
+          <div class="group-nav-item-icon">
+            <mat-icon class="TwentyPixelIcon" svgIcon="reports" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+          </div>
+          <a routerLink="reports" routerLinkActive="active" class="group-nav-item-link">REPORTS</a>
+        </div>
+
+        <!-- settings-->
+        <div class="group-nav-item">
+          <div class="group-nav-item-icon">
+            <mat-icon class="TwentyPixelIcon" svgIcon="settings" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+          </div>
+          <a routerLink="settings" routerLinkActive="active" class="group-nav-item-link">SETTINGS</a>
+        </div>
+
+      </div>
     </div>
 
     <div class="group-content">
@@ -17,6 +76,7 @@
 
       <div class="group-content-info">
 
+        <router-outlet></router-outlet>
 <!--        <div>-->
 <!--          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque doloremque ducimus iste minima-->
 <!--            officia officiis quos soluta velit. A aliquid cum dolorem doloribus eaque eum, maxime non sapiente-->

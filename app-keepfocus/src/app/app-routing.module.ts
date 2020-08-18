@@ -1,59 +1,59 @@
-import {RouterModule, Routes} from "@angular/router";
-import {NgModule} from "@angular/core";
+import {RouterModule, Routes} from '@angular/router';
+import {NgModule} from '@angular/core';
 
 const routes: Routes = [
   {
-    path: "installations",
+    path: 'installations',
     loadChildren: () =>
-      import("./features/installations/installations.module").then(
+      import('./features/installations/installations.module').then(
         m => m.InstallationsModule
       )
   },
   {
-    path: "dashboard",
+    path: 'dashboard',
     loadChildren: () =>
-      import("./features/dashboard/dashboard.module").then(
+      import('./features/dashboard/dashboard.module').then(
         m => m.DashboardModule
       )
   },
   {
-    path: "alarms",
+    path: 'alarms',
     loadChildren: () =>
-      import("./features/alarms/alarms.module").then(
+      import('./features/alarms/alarms.module').then(
         m => m.AlarmsModule
       )
   },
   {
-    path: "search",
+    path: 'search',
     loadChildren: () =>
-      import("./features/search/search.module").then(
+      import('./features/search/search.module').then(
         m => m.SearchModule
       )
   },
   {
-    path: "administration",
+    path: 'administration',
     loadChildren: () =>
-      import("./features/administration/administration.module").then(
+      import('./features/administration/administration.module').then(
         m => m.AdministrationModule
       )
   },
   {
-    path: "documentation",
+    path: 'documentation',
     loadChildren: () =>
-      import("./features/documentation/documentation.module").then(
+      import('./features/documentation/documentation.module').then(
         m => m.DocumentationModule
       )
   },
   {
-    path: "settings",
+    path: 'settings',
     loadChildren: () =>
-      import("./features/settings/settings.module").then(
+      import('./features/settings/settings.module').then(
         m => m.SettingsModule
       )
   },
-  { path: "", redirectTo: "installations", pathMatch: "full" },
-  { path: "**", redirectTo: "installations" }
-]
+  {path: '', redirectTo: 'installations', pathMatch: 'full'},
+  {path: '**', redirectTo: 'installations'}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
