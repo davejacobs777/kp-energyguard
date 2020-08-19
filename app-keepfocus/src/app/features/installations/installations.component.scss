@@ -35,31 +35,64 @@
 
     &-header {
       flex: 0 0 72px;
-      padding: 0 3rem;
+      padding: 0 2rem;
       border-bottom: solid 1px $primary-300;
 
       display: flex;
       align-items: center;
-      margin-right: auto;
 
-      h2 {
-        display: inline-block;
-        margin: 0;
+      &-left {
+        display: flex;
+        align-items: center;
+
+        margin-right: auto;
+        h2 {
+          display: inline-block;
+          margin: 0;
+        }
       }
 
-      .group-nav {
+      &-right {
+        align-self: stretch;
 
         display: flex;
 
-        &-item {
+        .group-nav {
+          flex: 1;
+          display: flex;
 
-          &-icon
-          {
-
-          }
-
-          &-link {
+          &-item {
+            flex: 1;
+            padding: 1rem 3rem;
+            //border-bottom: 2px solid $primary-500;
+            color: $primary-500;
             text-decoration: none;
+            display: flex;
+            flex-direction: column;
+
+            &-icon {
+              flex: 1;
+
+              display: flex;
+              align-items: center;
+
+              .TwentyPixelIcon {
+                flex: 1;
+                margin: 0;
+                align-self: center;
+              }
+            }
+
+            &-name {
+              flex: 1;
+              display: flex;
+              align-items: center;
+                span {
+                  font-size: 14px;
+                  align-self: center;
+                  letter-spacing: 1px;
+                }
+            }
           }
         }
       }
@@ -107,6 +140,8 @@
 
 .example-tab-icon {
   margin-right: 8px;
+  height: 72px;
 }
+
 
 
