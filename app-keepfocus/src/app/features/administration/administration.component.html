@@ -1,1 +1,6 @@
 <p>administration works!</p>
+
+<p *ngFor="let item of focusGroups$ | async">
+  {{item?.id}}
+
+</p>

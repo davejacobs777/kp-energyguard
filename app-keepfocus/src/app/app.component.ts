@@ -1,9 +1,9 @@
-import {ChangeDetectorRef, Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
-import {MatIconRegistry} from "@angular/material/icon";
-import {DomSanitizer} from "@angular/platform-browser";
-import {BreakpointObserver, MediaMatcher} from "@angular/cdk/layout";
-import {UntilDestroy, untilDestroyed} from "@ngneat/until-destroy";
-import {map} from "rxjs/operators";
+import {ChangeDetectorRef, Component, EventEmitter, OnDestroy, OnInit, Output, ViewChild} from '@angular/core';
+import {MatIconRegistry} from '@angular/material/icon';
+import {DomSanitizer} from '@angular/platform-browser';
+import {BreakpointObserver, MediaMatcher} from '@angular/cdk/layout';
+import {UntilDestroy, untilDestroyed} from '@ngneat/until-destroy';
+import {map} from 'rxjs/operators';
 
 @UntilDestroy()
 @Component({
@@ -12,8 +12,10 @@ import {map} from "rxjs/operators";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, OnDestroy {
-  isDesktop: boolean = true;
+  isDesktop = true;
 
+  // tslint:disable-next-line:no-output-native
+  @Output() isDesktopEmit: EventEmitter<boolean> = new EventEmitter();
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, private breakpointObserver: BreakpointObserver) {
 
@@ -50,23 +52,26 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.breakpointObserver
-      .observe("(min-width: 900px)")
+      .observe('(min-width: 900px)')
       .pipe(
         untilDestroyed(this),
         map(result => result.matches)
       )
       .subscribe(matches => {
         this.isDesktop = matches;
-        console.log("Matches", matches, this.isDesktop);
+        console.log('Matches', matches, this.isDesktop);
+        this.isDesktopEmit.emit(matches);
       });
   }
 
 
   // Do not delete
+  // tslint:disable-next-line:typedef
   ngOnDestroy() {
 
   }
 
+  // tslint:disable-next-line:typedef
   navigate() {
 
   }
