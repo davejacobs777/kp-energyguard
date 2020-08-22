@@ -12,6 +12,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatOptionModule} from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
+import {MatTreeModule} from '@angular/material/tree';
 
 const MaterialComponents = [
   MatButtonModule,
@@ -27,7 +28,8 @@ const MaterialComponents = [
   MatIconModule,
   MatFormFieldModule,
   MatOptionModule,
-  MatSelectModule
+  MatSelectModule,
+  MatTreeModule,
 ];
 
 @NgModule({

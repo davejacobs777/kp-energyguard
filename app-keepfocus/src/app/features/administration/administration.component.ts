@@ -1,7 +1,7 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 import {Observable, Subscription} from 'rxjs';
-import {map} from 'rxjs/operators';
+import {map, tap} from 'rxjs/operators';
 
 @Component({
   selector: 'app-administration',
@@ -9,7 +9,7 @@ import {map} from 'rxjs/operators';
   styleUrls: ['./administration.component.scss']
 })
 export class AdministrationComponent implements OnInit, OnDestroy {
-  focusGroupsUrl = 'api/focus_groups';
+  focusGroupsUrl = 'api/focusGroups';
   focusGroups$: Observable<any>;
   subscription: Subscription;
 
@@ -17,10 +17,7 @@ export class AdministrationComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.focusGroups$ = this.http.get(this.focusGroupsUrl).pipe(map(data => data[0].groups));
-    }, 3000);
-
+      this.focusGroups$ = this.http.get(this.focusGroupsUrl).pipe(tap(data => console.log(data)));
   }
 
   ngOnDestroy(): void {

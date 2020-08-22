@@ -1,379 +1,2465 @@
 {
-  "focus_groups": [
+  "focusGroups": [
     {
-      "id": 1020,
-      "groups": [
+      "id": 428,
+      "name": "Aarhus Omegns Boligforening",
+      "type": "Company",
+      "installations": 999,
+      "meters": 999,
+      "parentId": null,
+      "children": [
         {
-          "id": "1020",
-          "user_id": null,
-          "name": "Sønderskovvej",
-          "shared": "f",
-          "include_submeters": "f",
-          "share": "0",
-          "parent_focus_group_id": null,
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroupHousingDepartment",
-          "data": "---\n:department_no: 0\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1325",
-          "user_id": null,
-          "name": "Teknikrum",
-          "shared": null,
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1020",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroup",
-          "data": "--- \n...\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1324",
-          "user_id": null,
-          "name": "Lejligheder",
-          "shared": null,
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1020",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroup",
-          "data": "--- \n...\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1204",
-          "user_id": null,
-          "name": "Fælles",
-          "shared": "f",
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1020",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroup",
-          "data": "--- \n...\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1202",
-          "user_id": null,
-          "name": "Opgang 161",
-          "shared": "f",
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1324",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroupHousingDoor",
-          "data": "---\n:door_no: '161'\n:auto_naming: true\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1203",
-          "user_id": null,
-          "name": "Opgang 163",
-          "shared": "f",
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1324",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroupHousingDoor",
-          "data": "---\n:door_no: '163'\n:auto_naming: true\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1199",
-          "user_id": null,
-          "name": "Opgang 155",
-          "shared": "f",
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1324",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroupHousingDoor",
-          "data": "---\n:door_no: '155'\n:auto_naming: true\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1198",
-          "user_id": null,
-          "name": "Opgang 153",
-          "shared": "f",
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1324",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroupHousingDoor",
-          "data": "---\n:door_no: '153'\n:auto_naming: true\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1200",
-          "user_id": null,
-          "name": "Opgang 157",
-          "shared": "f",
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1324",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroupHousingDoor",
-          "data": "---\n:door_no: '157'\n:auto_naming: true\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1201",
-          "user_id": null,
-          "name": "Opgang 159",
-          "shared": "f",
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1324",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroupHousingDoor",
-          "data": "---\n:door_no: '159'\n:auto_naming: true\n",
-          "tag": null,
-          "share_was": "0"
+          "id": 4433,
+          "name": "Skyttehusene",
+          "type": "Housing Department",
+          "installations": 999,
+          "meters": 999,
+          "parentId": 428,
+          "children": [
+            {
+              "id": 4434,
+              "name": "Lejlighed",
+              "type": "Installation Group",
+              "installations": 999,
+              "meters": 999,
+              "parentId": 4433,
+              "children": [
+                {
+                  "id": 4435,
+                  "name": "Block 6",
+                  "type": "Housing Block",
+                  "installations": 999,
+                  "meters": 999,
+                  "parentId": 4434,
+                  "children": [
+                    {
+                      "id": 4436,
+                      "name": "Door 7",
+                      "type": "Housing Door",
+                      "installations": 999,
+                      "meters": 999,
+                      "parentId": 4435,
+                      "children": [
+                        {
+                          "id": 27326,
+                          "name": "1.53-1",
+                          "type": "Installation",
+                          "address": "Haldór Laxnexness Vej 7 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4436,
+                          "children": [
+                            {
+                              "id": 161203,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27336
+                            },
+                            {
+                              "id": 161201,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27336
+                            },
+                            {
+                              "id": 161202,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27336
+                            },
+                            {
+                              "id": 161204,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27336
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27335,
+                          "name": "1.53-10",
+                          "type": "Installation",
+                          "address": "Haldór Laxnexness Vej 7 - 3 mf",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4436,
+                          "children": [
+                            {
+                              "id": 162334,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27335
+                            },
+                            {
+                              "id": 162332,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27335
+                            },
+                            {
+                              "id": 162333,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27335
+                            },
+                            {
+                              "id": 162335,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27335
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27336,
+                          "name": "1.53-11",
+                          "type": "Installation",
+                          "address": "Haldór Laxnexness Vej 7 - 3 tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4436,
+                          "children": [
+                            {
+                              "id": 162339,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27336
+                            },
+                            {
+                              "id": 162337,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27336
+                            },
+                            {
+                              "id": 162338,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27336
+                            },
+                            {
+                              "id": 162340,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27336
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27337,
+                          "name": "1.53-12",
+                          "type": "Installation",
+                          "address": "Haldór Laxnexness Vej 7 - 3 th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4436,
+                          "children": [
+                            {
+                              "id": 161194,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27337
+                            },
+                            {
+                              "id": 161192,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27337
+                            },
+                            {
+                              "id": 161193,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27337
+                            },
+                            {
+                              "id": 161195,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27337
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27327,
+                          "name": "1.53-2",
+                          "type": "Installation",
+                          "address": "Haldór Laxnexness Vej 7 - St. mf",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4436,
+                          "children": [
+                            {
+                              "id": 161199,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27327
+                            },
+                            {
+                              "id": 161197,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27327
+                            },
+                            {
+                              "id": 161198,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27327
+                            },
+                            {
+                              "id": 161200,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27327
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27328,
+                          "name": "1.53-3",
+                          "type": "Installation",
+                          "address": "Haldór Laxnexness Vej 7 - St. tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "children": [
+                            {
+                              "id": 161207,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27328
+                            },
+                            {
+                              "id": 161205,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27328
+                            },
+                            {
+                              "id": 161206,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27328
+                            },
+                            {
+                              "id": 161208,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27328
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27329,
+                          "name": "1.53-4",
+                          "type": "Installation",
+                          "address": "Haldór Laxnexness Vej 7 - 1 mf",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4436,
+                          "children": [
+                            {
+                              "id": 161211,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27329
+                            },
+                            {
+                              "id": 161209,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27329
+                            },
+                            {
+                              "id": 161210,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27329
+                            },
+                            {
+                              "id": 161212,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27329
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27372,
+                          "type": "Installation",
+                          "name": "1.53-47",
+                          "address": "Dea Trier Mørchs Vej 7 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4436,
+                          "children": [
+                            {
+                              "id": 161295,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27372
+                            },
+                            {
+                              "id": 161293,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27372
+                            },
+                            {
+                              "id": 161294,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27372
+                            },
+                            {
+                              "id": 161296,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27372
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4439,
+                      "name": "Door 9",
+                      "type": "Housing Door",
+                      "installations": 999,
+                      "meters": 999,
+                      "parentId": 4435,
+                      "children": [
+                        {
+                          "id": 27364,
+                          "name": "1.53-39",
+                          "type": "Installation",
+                          "address": "Dea Trier Mørchs Vej 9 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4439,
+                          "children": [
+                            {
+                              "id": 161371,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27364
+                            },
+                            {
+                              "id": 161369,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27364
+                            },
+                            {
+                              "id": 161370,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27364
+                            },
+                            {
+                              "id": 161372,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27364
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27365,
+                          "name": "1.53-40",
+                          "type": "Installation",
+                          "address": "Dea Trier Mørchs Vej 9 - St. tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4439,
+                          "children": [
+                            {
+                              "id": 161355,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27365
+                            },
+                            {
+                              "id": 161353,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27365
+                            },
+                            {
+                              "id": 161354,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27365
+                            },
+                            {
+                              "id": 161356,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27365
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27366,
+                          "name": "1.53-41",
+                          "type": "Installation",
+                          "address": "Dea Trier Mørchs Vej 9 - 1 tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4439,
+                          "children": [
+                            {
+                              "id": 161359,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27336
+                            },
+                            {
+                              "id": 161357,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27336
+                            },
+                            {
+                              "id": 161358,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27336
+                            },
+                            {
+                              "id": 161360,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27336
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27367,
+                          "name": "1.53-42",
+                          "type": "Installation",
+                          "address": "Dea Trier Mørchs Vej 9 - 1 th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4439,
+                          "children": [
+                            {
+                              "id": 161367,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27367
+                            },
+                            {
+                              "id": 161365,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27367
+                            },
+                            {
+                              "id": 161366,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27367
+                            },
+                            {
+                              "id": 161368,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27367
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4438,
+                      "name": "Door 11",
+                      "type": "Housing Door",
+                      "installations": 999,
+                      "meters": 999,
+                      "parentId": 4435,
+                      "children": [
+                        {
+                          "id": 27352,
+                          "name": "1.53-27",
+                          "type": "Installation",
+                          "address": "Dea Trier Mørchs Vej 11 - St. mf",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4438,
+                          "children": [
+                            {
+                              "id": 161343,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27352
+                            },
+                            {
+                              "id": 161341,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27352
+                            },
+                            {
+                              "id": 161342,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27352
+                            },
+                            {
+                              "id": 161344,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27352
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27353,
+                          "name": "1.53-28",
+                          "type": "Installation",
+                          "address": "Dea Trier Mørchs Vej 11 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4438,
+                          "children": [
+                            {
+                              "id": 161307,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27353
+                            },
+                            {
+                              "id": 161305,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27353
+                            },
+                            {
+                              "id": 161306,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27353
+                            },
+                            {
+                              "id": 161308,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27353
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27354,
+                          "name": "1.53-29",
+                          "type": "Installation",
+                          "address": "Dea Trier Mørchs Vej 11 - St. tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4438,
+                          "children": [
+                            {
+                              "id": 161315,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27354
+                            },
+                            {
+                              "id": 161313,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27354
+                            },
+                            {
+                              "id": 161314,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27354
+                            },
+                            {
+                              "id": 161316,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27354
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4437,
+                      "name": "Door 12",
+                      "type": "Housing Door",
+                      "installations": 999,
+                      "meters": 999,
+                      "parentId": 4435,
+                      "children": [
+                        {
+                          "id": 27338,
+                          "name": "1.53-13",
+                          "type": "Installation",
+                          "address": "Emma Gads Vej 12 - St. mf",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4437,
+                          "children": [
+                            {
+                              "id": 161303,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27338
+                            },
+                            {
+                              "id": 161301,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27338
+                            },
+                            {
+                              "id": 161302,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27338
+                            },
+                            {
+                              "id": 161304,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27338
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27339,
+                          "name": "1.53-14",
+                          "type": "Installation",
+                          "address": "Emma Gads Vej 12 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4437,
+                          "children": [
+                            {
+                              "id": 161299,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27339
+                            },
+                            {
+                              "id": 161297,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27339
+                            },
+                            {
+                              "id": 161298,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27339
+                            },
+                            {
+                              "id": 161300,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27339
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27340,
+                          "name": "1.53-15",
+                          "type": "Installation",
+                          "address": "Emma Gads Vej 12 - St. tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4437,
+                          "children": [
+                            {
+                              "id": 161247,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27340
+                            },
+                            {
+                              "id": 161245,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27340
+                            },
+                            {
+                              "id": 161246,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27340
+                            },
+                            {
+                              "id": 161248,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27340
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 4440,
+                  "name": "Block 9",
+                  "type": "Housing Block",
+                  "installations": 999,
+                  "meters": 999,
+                  "parentId": 4434,
+                  "children": [
+                    {
+                      "id": 4441,
+                      "name": "Door 1",
+                      "type": "Housing Door",
+                      "installations": 999,
+                      "meters": 999,
+                      "parentId": 4440,
+                      "children": [
+                        {
+                          "id": 27398,
+                          "name": "1.53-101",
+                          "type": "Installation",
+                          "address": "CF Møllers Allé 1 - St. mf",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4441,
+                          "children": [
+                            {
+                              "id": 203456,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27398
+                            },
+                            {
+                              "id": 203454,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27398
+                            },
+                            {
+                              "id": 203455,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27398
+                            },
+                            {
+                              "id": 203457,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27398
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27399,
+                          "name": "1.53-102",
+                          "type": "Installation",
+                          "address": "CF Møllers Allé 1 - St. tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4441,
+                          "children": [
+                            {
+                              "id": 203458,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27399
+                            },
+                            {
+                              "id": 203459,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27399
+                            },
+                            {
+                              "id": 203460,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27399
+                            },
+                            {
+                              "id": 203461,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27399
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27400,
+                          "name": "1.53-103",
+                          "type": "Installation",
+                          "address": "CF Møllers Allé 1 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4441,
+                          "children": [
+                            {
+                              "id": 203464,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27400
+                            },
+                            {
+                              "id": 203462,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27400
+                            },
+                            {
+                              "id": 203463,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27400
+                            },
+                            {
+                              "id": 203465,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27400
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4442,
+                      "name": "Door 3",
+                      "type": "Housing Door",
+                      "installations": 999,
+                      "meters": 999,
+                      "parentId": 4440,
+                      "children": [
+                        {
+                          "id": 27411,
+                          "name": "1.53-114",
+                          "type": "Installation",
+                          "address": "CF Møllers Allé 3 - St. tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4442,
+                          "children": [
+                            {
+                              "id": 203600,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27411
+                            },
+                            {
+                              "id": 203598,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27411
+                            },
+                            {
+                              "id": 203599,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27411
+                            },
+                            {
+                              "id": 203601,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27411
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27412,
+                          "name": "1.53-115",
+                          "type": "Installation",
+                          "address": "CF Møllers Allé 3 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4442,
+                          "children": [
+                            {
+                              "id": 203596,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27412
+                            },
+                            {
+                              "id": 203594,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27412
+                            },
+                            {
+                              "id": 203595,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27412
+                            },
+                            {
+                              "id": 203597,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27412
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27413,
+                          "name": "1.53-116",
+                          "type": "Installation",
+                          "address": "CF Møllers Allé 3 - 1 th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4442,
+                          "children": [
+                            {
+                              "id": 203592,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27413
+                            },
+                            {
+                              "id": 203590,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27413
+                            },
+                            {
+                              "id": 203591,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27413
+                            },
+                            {
+                              "id": 203593,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27413
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4443,
+                      "name": "Door 5",
+                      "type": "Housing Door",
+                      "installations": 999,
+                      "meters": 999,
+                      "parentId": 4440,
+                      "children": [
+                        {
+                          "id": 27421,
+                          "name": "1.53-124",
+                          "type": "Installation",
+                          "address": "CF Møllers Allé 5 - St. tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4443,
+                          "children": [
+                            {
+                              "id": 211630,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27421
+                            },
+                            {
+                              "id": 211629,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27421
+                            },
+                            {
+                              "id": 203516,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27421
+                            },
+                            {
+                              "id": 203517,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27421
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27422,
+                          "name": "1.53-125",
+                          "type": "Installation",
+                          "address": "CF Møllers Allé 5 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4443,
+                          "children": [
+                            {
+                              "id": 211631,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27422
+                            },
+                            {
+                              "id": 203513,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27422
+                            },
+                            {
+                              "id": 203514,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27422
+                            },
+                            {
+                              "id": 203515,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27422
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27423,
+                          "name": "1.53-126",
+                          "type": "Installation",
+                          "address": "CF Møllers Allé 5 - 1 th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4443,
+                          "children": [
+                            {
+                              "id": 203569,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27423
+                            },
+                            {
+                              "id": 203567,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27423
+                            },
+                            {
+                              "id": 203568,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27423
+                            },
+                            {
+                              "id": 203570,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27423
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 4444,
+                  "name": "Block 15",
+                  "type": "Housing Block",
+                  "installations": 999,
+                  "meters": 999,
+                  "parentId": 4434,
+                  "children": [
+                    {
+                      "id": 4445,
+                      "name": "Door 1",
+                      "type": "Housing Door",
+                      "installations": 999,
+                      "meters": 999,
+                      "parentId": 4444,
+                      "children": [
+                        {
+                          "id": 27447,
+                          "name": "1.53-301",
+                          "type": "Installation",
+                          "address": "C.F. Møllers Allé 93 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4445,
+                          "children": [
+                            {
+                              "id": 256342,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27447
+                            },
+                            {
+                              "id": 256154,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27447
+                            },
+                            {
+                              "id": 256155,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27447
+                            },
+                            {
+                              "id": 256156,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27447
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27448,
+                          "name": "1.53-302",
+                          "type": "Installation",
+                          "address": "C.F. Møllers Allé 93 - St. tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4445,
+                          "children": [
+                            {
+                              "id": 27448,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27448
+                            },
+                            {
+                              "id": 216025,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27448
+                            },
+                            {
+                              "id": 216026,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27448
+                            },
+                            {
+                              "id": 216028,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27448
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27449,
+                          "name": "1.53-303",
+                          "type": "Installation",
+                          "address": "C.F. Møllers Allé 93 - 1 tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4445,
+                          "children": [
+                            {
+                              "id": 216015,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27449
+                            },
+                            {
+                              "id": 216013,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27449
+                            },
+                            {
+                              "id": 216014,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27449
+                            },
+                            {
+                              "id": 216016,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27449
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4446,
+                      "name": "Door 2",
+                      "type": "Housing Door",
+                      "installations": 999,
+                      "meters": 999,
+                      "parentId": 4444,
+                      "children": [
+                        {
+                          "id": 27457,
+                          "name": "1.53-311",
+                          "type": "Installation",
+                          "address": "C.F. Møllers Allé 91 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4446,
+                          "children": [
+                            {
+                              "id": 256152,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27457
+                            },
+                            {
+                              "id": 256150,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27457
+                            },
+                            {
+                              "id": 256151,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27457
+                            },
+                            {
+                              "id": 256153,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27457
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27458,
+                          "name": "1.53-312",
+                          "type": "Installation",
+                          "address": "C.F. Møllers Allé 91 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4446,
+                          "children": [
+                            {
+                              "id": 216039,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27458
+                            },
+                            {
+                              "id": 216037,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27458
+                            },
+                            {
+                              "id": 216038,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27458
+                            },
+                            {
+                              "id": 216040,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27458
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27459,
+                          "name": "1.53-313",
+                          "type": "Installation",
+                          "address": "C.F. Møllers Allé 91 - 1 tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4446,
+                          "children": [
+                            {
+                              "id": 216043,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27459
+                            },
+                            {
+                              "id": 216041,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27459
+                            },
+                            {
+                              "id": 216042,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27459
+                            },
+                            {
+                              "id": 216044,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27459
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4447,
+                      "name": "Door 3",
+                      "type": "Housing Door",
+                      "installations": 999,
+                      "meters": 999,
+                      "parentId": 4444,
+                      "children": [
+                        {
+                          "id": 27464,
+                          "name": "1.53-321",
+                          "type": "Installation",
+                          "address": "Emma Gads Vej 2 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4447,
+                          "children": [
+                            {
+                              "id": 216075,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27464
+                            },
+                            {
+                              "id": 216073,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27464
+                            },
+                            {
+                              "id": 216074,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27464
+                            },
+                            {
+                              "id": 216076,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27464
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27465,
+                          "name": "1.53-322",
+                          "type": "Installation",
+                          "address": "Emma Gads Vej 2 - St. tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4447,
+                          "children": [
+                            {
+                              "id": 216091,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27465
+                            },
+                            {
+                              "id": 216089,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27465
+                            },
+                            {
+                              "id": 216090,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27465
+                            },
+                            {
+                              "id": 216092,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27465
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27466,
+                          "name": "1.53-323",
+                          "type": "Installation",
+                          "address": "Emma Gads Vej 2 - 1 tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4447,
+                          "children": [
+                            {
+                              "id": 216095,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27466
+                            },
+                            {
+                              "id": 216093,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27466
+                            },
+                            {
+                              "id": 216094,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27466
+                            },
+                            {
+                              "id": 216096,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27466
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4448,
+                      "name": "Door 4",
+                      "type": "Housing Door",
+                      "installations": 999,
+                      "meters": 999,
+                      "parentId": 4444,
+                      "children": [
+                        {
+                          "id": 27476,
+                          "name": "1.53-333",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 2 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4448,
+                          "children": [
+                            {
+                              "id": 216177,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27476
+                            },
+                            {
+                              "id": 216175,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27476
+                            },
+                            {
+                              "id": 216176,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27476
+                            },
+                            {
+                              "id": 216178,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27476
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27477,
+                          "name": "1.53-334",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 2 - St. tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4448,
+                          "children": [
+                            {
+                              "id": 216181,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27477
+                            },
+                            {
+                              "id": 216179,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27477
+                            },
+                            {
+                              "id": 216180,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27477
+                            },
+                            {
+                              "id": 216182,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27477
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27478,
+                          "name": "1.53-335",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 2 - 1 tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4448,
+                          "children": [
+                            {
+                              "id": 216187,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27478
+                            },
+                            {
+                              "id": 216185,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27478
+                            },
+                            {
+                              "id": 216186,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27478
+                            },
+                            {
+                              "id": 216188,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27478
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4449,
+                      "name": "Door 5",
+                      "type": "Housing Door",
+                      "installations": 999,
+                      "meters": 999,
+                      "parentId": 4444,
+                      "children": [
+                        {
+                          "id": 27484,
+                          "name": "1.53-341",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 4 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4449,
+                          "children": [
+                            {
+                              "id": 216144,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27484
+                            },
+                            {
+                              "id": 216142,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27484
+                            },
+                            {
+                              "id": 216143,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27484
+                            },
+                            {
+                              "id": 216145,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27484
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27485,
+                          "name": "1.53-342",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 4 - St. tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4449,
+                          "children": [
+                            {
+                              "id": 216120,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27485
+                            },
+                            {
+                              "id": 216118,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27485
+                            },
+                            {
+                              "id": 216119,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27485
+                            },
+                            {
+                              "id": 216121,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27485
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27486,
+                          "name": "1.53-343",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 4 - 1 tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4449,
+                          "children": [
+                            {
+                              "id": 256165,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27486
+                            },
+                            {
+                              "id": 256163,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27486
+                            },
+                            {
+                              "id": 256164,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27486
+                            },
+                            {
+                              "id": 256341,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27486
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4450,
+                      "name": "Door 6",
+                      "type": "Housing Door",
+                      "installations": 999,
+                      "meters": 999,
+                      "parentId": 4444,
+                      "children": [
+                        {
+                          "id": 27492,
+                          "name": "1.53-349",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 6 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4450,
+                          "children": [
+                            {
+                              "id": 256167,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27492
+                            },
+                            {
+                              "id": 256349,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27492
+                            },
+                            {
+                              "id": 256166,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27492
+                            },
+                            {
+                              "id": 256168,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27492
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27493,
+                          "name": "1.53-350",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 6 - St. tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4450,
+                          "children": [
+                            {
+                              "id": 216148,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27493
+                            },
+                            {
+                              "id": 216146,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27493
+                            },
+                            {
+                              "id": 216147,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27493
+                            },
+                            {
+                              "id": 216149,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27493
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27494,
+                          "name": "1.53-351",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 6 - St. mf",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4450,
+                          "children": [
+                            {
+                              "id": 216152,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27494
+                            },
+                            {
+                              "id": 216150,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27494
+                            },
+                            {
+                              "id": 216151,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27494
+                            },
+                            {
+                              "id": 216153,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27494
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 4451,
+                  "name": "Block 17",
+                  "type": "Housing Block",
+                  "installations": 999,
+                  "meters": 999,
+                  "parentId": 4434,
+                  "children": [
+                    {
+                      "id": 4452,
+                      "name": "Door 14",
+                      "type": "Housing Door",
+                      "installations": 999,
+                      "meters": 999,
+                      "parentId": 4451,
+                      "children": [
+                        {
+                          "id": 27508,
+                          "name": "1.53-401",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 14 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4452,
+                          "children": [
+                            {
+                              "id": 221135,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27508
+                            },
+                            {
+                              "id": 221133,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27508
+                            },
+                            {
+                              "id": 221134,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27508
+                            },
+                            {
+                              "id": 221136,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27508
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27509,
+                          "name": "1.53-402",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 14 - St. mf",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4452,
+                          "children": [
+                            {
+                              "id": 221141,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27509
+                            },
+                            {
+                              "id": 221137,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27509
+                            },
+                            {
+                              "id": 221139,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27509
+                            },
+                            {
+                              "id": 221143,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27509
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27510,
+                          "name": "1.53-403",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 14 - St. tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4452,
+                          "children": [
+                            {
+                              "id": 221318,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27510
+                            },
+                            {
+                              "id": 221316,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27510
+                            },
+                            {
+                              "id": 221317,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27510
+                            },
+                            {
+                              "id": 221319,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27510
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4453,
+                      "name": "Door 16",
+                      "type": "Housing Door",
+                      "installations": 999,
+                      "meters": 999,
+                      "parentId": 4451,
+                      "children": [
+                        {
+                          "id": 27523,
+                          "name": "1.53-416",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 16 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4453,
+                          "children": [
+                            {
+                              "id": 221174,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27523
+                            },
+                            {
+                              "id": 221172,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27523
+                            },
+                            {
+                              "id": 221173,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27523
+                            },
+                            {
+                              "id": 221175,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27523
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27524,
+                          "name": "1.53-417",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 16 - St. tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4453,
+                          "children": [
+                            {
+                              "id": 221178,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27524
+                            },
+                            {
+                              "id": 221176,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27524
+                            },
+                            {
+                              "id": 221177,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27524
+                            },
+                            {
+                              "id": 221179,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27524
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27525,
+                          "name": "1.53-418",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 16 - St. mf",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4453,
+                          "children": [
+                            {
+                              "id": 221184,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27525
+                            },
+                            {
+                              "id": 221181,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27525
+                            },
+                            {
+                              "id": 221183,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27525
+                            },
+                            {
+                              "id": 221186,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27525
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4454,
+                      "name": "Door 18",
+                      "type": "Housing Door",
+                      "installations": 999,
+                      "meters": 999,
+                      "parentId": 4451,
+                      "children": [
+                        {
+                          "id": 27537,
+                          "name": "1.53-430",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 18 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4454,
+                          "children": [
+                            {
+                              "id": 221230,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27537
+                            },
+                            {
+                              "id": 221228,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27537
+                            },
+                            {
+                              "id": 221229,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27537
+                            },
+                            {
+                              "id": 221231,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27537
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27538,
+                          "name": "1.53-431",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 18 - St. tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4454,
+                          "children": [
+                            {
+                              "id": 221234,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27538
+                            },
+                            {
+                              "id": 221232,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27538
+                            },
+                            {
+                              "id": 221233,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27538
+                            },
+                            {
+                              "id": 221235,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27538
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27539,
+                          "name": "1.53-432",
+                          "type": "Installation",
+                          "address": "Halldór Laxness Vej 18 - St. mf",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4454,
+                          "children": [
+                            {
+                              "id": 221238,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27539
+                            },
+                            {
+                              "id": 221236,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27539
+                            },
+                            {
+                              "id": 221237,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27539
+                            },
+                            {
+                              "id": 221239,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27539
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4455,
+                      "name": "Door 48",
+                      "type": "Housing Door",
+                      "installations": 999,
+                      "meters": 999,
+                      "parentId": 4451,
+                      "children": [
+                        {
+                          "id": 27549,
+                          "name": "1.53-442",
+                          "type": "Installation",
+                          "address": "Ørestad Boulevard 48 - St. th",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4455,
+                          "children": [
+                            {
+                              "id": 221274,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27549
+                            },
+                            {
+                              "id": 221272,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27549
+                            },
+                            {
+                              "id": 221273,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27549
+                            },
+                            {
+                              "id": 221275,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27549
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27550,
+                          "name": "1.53-443",
+                          "type": "Installation",
+                          "address": "Ørestad Boulevard 48 - St. tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4455,
+                          "children": [
+                            {
+                              "id": 221278,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27550
+                            },
+                            {
+                              "id": 221276,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27550
+                            },
+                            {
+                              "id": 221277,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27550
+                            },
+                            {
+                              "id": 221279,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27550
+                            }
+                          ]
+                        },
+                        {
+                          "id": 27551,
+                          "name": "1.53-444",
+                          "type": "Installation",
+                          "address": "Ørestad Boulevard 48 - 1 tv",
+                          "zipcode": "2300",
+                          "city": "København S",
+                          "parentId": 4455,
+                          "children": [
+                            {
+                              "id": 221282,
+                              "type": "Electric Meter",
+                              "meterType": "Electric",
+                              "name": "El(I fordelingstavle i kælderen)",
+                              "parentId": 27551
+                            },
+                            {
+                              "id": 221280,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Koldt vand(I teknikskakt)",
+                              "parentId": 27551
+                            },
+                            {
+                              "id": 221281,
+                              "type": "Water Meter",
+                              "meterType": "Water",
+                              "name": "Varmt vand(I teknikskakt)",
+                              "parentId": 27551
+                            },
+                            {
+                              "id": 221283,
+                              "type": "Heating Meter",
+                              "meterType": "Heating",
+                              "name": "Varme energi(I teknikskakt)",
+                              "parentId": 27551
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
-      ]
-    },
-    {
-      "id": 1025,
-      "groups": [
-        {
-          "id": "1021",
-          "user_id": null,
-          "name": "Sønderskovvej",
-          "shared": "f",
-          "include_submeters": "f",
-          "share": "0",
-          "parent_focus_group_id": null,
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroupHousingDepartment",
-          "data": "---\n:department_no: 0\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1325",
-          "user_id": null,
-          "name": "Teknikrum",
-          "shared": null,
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1020",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroup",
-          "data": "--- \n...\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1324",
-          "user_id": null,
-          "name": "Lejligheder",
-          "shared": null,
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1020",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroup",
-          "data": "--- \n...\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1204",
-          "user_id": null,
-          "name": "Fælles",
-          "shared": "f",
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1020",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroup",
-          "data": "--- \n...\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1202",
-          "user_id": null,
-          "name": "Opgang 161",
-          "shared": "f",
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1324",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroupHousingDoor",
-          "data": "---\n:door_no: '161'\n:auto_naming: true\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1203",
-          "user_id": null,
-          "name": "Opgang 163",
-          "shared": "f",
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1324",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroupHousingDoor",
-          "data": "---\n:door_no: '163'\n:auto_naming: true\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1199",
-          "user_id": null,
-          "name": "Opgang 155",
-          "shared": "f",
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1324",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroupHousingDoor",
-          "data": "---\n:door_no: '155'\n:auto_naming: true\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1198",
-          "user_id": null,
-          "name": "Opgang 153",
-          "shared": "f",
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1324",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroupHousingDoor",
-          "data": "---\n:door_no: '153'\n:auto_naming: true\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1200",
-          "user_id": null,
-          "name": "Opgang 157",
-          "shared": "f",
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1324",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroupHousingDoor",
-          "data": "---\n:door_no: '157'\n:auto_naming: true\n",
-          "tag": null,
-          "share_was": "0"
-        },
-        {
-          "id": "1201",
-          "user_id": null,
-          "name": "Opgang 159",
-          "shared": "f",
-          "include_submeters": null,
-          "share": "0",
-          "parent_focus_group_id": "1324",
-          "op_mode": "3",
-          "meter_tag_names": null,
-          "customer_id": "294",
-          "installation_group_type": "InstallationGroupHousingDoor",
-          "data": "---\n:door_no: '159'\n:auto_naming: true\n",
-          "tag": null,
-          "share_was": "0"
-        }
-      ]
-    }
-  ],
-  "dashboards": [
-    {
-      "id": 1,
-      "name": "Default",
-      "widgets": [
-        {
-          "id": "1",
-          "name": "117494 (el)",
-          "componentName": "Meter_Component",
-          "componentType": "MeterWidgetComponent",
-          "dataType": "Meter",
-          "dataId": 1,
-          "data": [
-            { "name": "Mandag", "value": 5.4, "id": 1 },
-            { "name": "Tirsdag", "value": 6.3, "id": 2 },
-            { "name": "Onsdag", "value": 2.4, "id": 3 },
-            { "name": "Torsdag", "value": 8.4, "id": 4 },
-            { "name": "Fredag", "value": 3.9, "id": 5 },
-            { "name": "Lørdag", "value": 10.4, "id": 6 },
-            { "name": "Søndag", "value": 9.7, "id": 7 }
-          ],
-          "meterType": "electricity",
-          "cols": 5,
-          "rows": 4,
-          "minItemRows": 4,
-          "minItemCols": 5,
-          "y": 0,
-          "x": 0
-        }
-      ]
-    }
-  ],
-  "data_series": [
-    {
-      "id": 1,
-      "series": [
-        { "name": "Mandag", "value": 5.4, "id": 1 },
-        { "name": "Tirsdag", "value": 6.3, "id": 2 },
-        { "name": "Onsdag", "value": 2.4, "id": 3 },
-        { "name": "Torsdag", "value": 8.4, "id": 4 },
-        { "name": "Fredag", "value": 3.9, "id": 5 },
-        { "name": "Lørdag", "value": 10.4, "id": 6 },
-        { "name": "Søndag", "value": 9.7, "id": 7 }
       ]
     }
   ]

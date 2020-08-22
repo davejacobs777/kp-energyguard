@@ -1,0 +1,76 @@
+
+  <!--Tree Module-->
+  <mat-tree [dataSource]="dataSource" [treeControl]="treeControl" class="example-tree">
+    <!-- This is the tree node template for leaf nodes -->
+    <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle>
+      <li class="mat-tree-node">
+        <!-- use a disabled button to provide padding for tree leaf -->
+        <button isIconButton="true" mat-icon-button disabled></button>
+        <div class="icon-container">
+          <mat-icon [svgIcon]="iconSearch(node)" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+          <!-- <mat-icon>settings</mat-icon> -->
+        </div>
+        {{node.name}}
+      </li>
+    </mat-tree-node>
+    <!-- This is the tree node template for expandable nodes -->
+    <mat-nested-tree-node *matTreeNodeDef="let node; when: hasChild">
+      <li>
+        <div class="mat-tree-node">
+          <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'toggle ' + node.name">
+            <mat-icon class="mat-icon-rtl-mirror">
+              {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+            </mat-icon>
+          </button>
+
+          <div class="icon-container">
+            <mat-icon [svgIcon]="iconSearch(node)" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+            <!-- <mat-icon>settings</mat-icon> -->
+          </div>
+          {{node.name}}
+        </div>
+        <ul [class.example-tree-invisible]="!treeControl.isExpanded(node)">
+          <ng-container matTreeNodeOutlet></ng-container>
+        </ul>
+      </li>
+    </mat-nested-tree-node>
+  </mat-tree>
+
+
+
+
+<!--<mat-tree [dataSource]="dataSource" [treeControl]="treeControl" class="example-tree">-->
+<!--  &lt;!&ndash; This is the tree node template for leaf nodes &ndash;&gt;-->
+<!--  <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle>-->
+<!--    <li class="mat-tree-node">-->
+<!--      &lt;!&ndash; use a disabled button to provide padding for tree leaf &ndash;&gt;-->
+<!--      <button mat-icon-button disabled></button>-->
+<!--      <div class="icon-container" style="margin-right: 16px;">-->
+<!--        <mat-icon [svgIcon]="iconSearch(node)" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>-->
+<!--        &lt;!&ndash; <mat-icon>settings</mat-icon> &ndash;&gt;-->
+<!--      </div>-->
+<!--      {{node.name}}-->
+<!--    </li>-->
+<!--  </mat-tree-node>-->
+<!--  &lt;!&ndash; This is the tree node template for expandable nodes &ndash;&gt;-->
+<!--  <mat-nested-tree-node *matTreeNodeDef="let node; when: hasChild">-->
+<!--    <li>-->
+<!--      <div class="mat-tree-node">-->
+<!--        <button mat-icon-button matTreeNodeToggle-->
+<!--                [attr.aria-label]="'toggle ' + node.name">-->
+<!--          <mat-icon class="mat-icon-rtl-mirror">-->
+<!--            {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}-->
+<!--          </mat-icon>-->
+<!--        </button>-->
+<!--        <div class="icon-container" style="margin-right: 16px;">-->
+<!--          <mat-icon [svgIcon]="iconSearch(node)" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>-->
+<!--          &lt;!&ndash; <mat-icon>settings</mat-icon> &ndash;&gt;-->
+<!--        </div>-->
+<!--        {{node.name}}-->
+<!--      </div>-->
+<!--      <ul [class.example-tree-invisible]="!treeControl.isExpanded(node)">-->
+<!--        <ng-container matTreeNodeOutlet></ng-container>-->
+<!--      </ul>-->
+<!--    </li>-->
+<!--  </mat-nested-tree-node>-->
+<!--</mat-tree>-->

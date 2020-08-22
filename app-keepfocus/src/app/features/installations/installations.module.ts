@@ -10,10 +10,12 @@ import {AnalyseComponent} from './views/analyse/analyse.component';
 import {AlarmsComponent} from './views/alarms/alarms.component';
 import {ReportsComponent} from './views/reports/reports.component';
 import {SettingsComponent} from './views/settings/settings.component';
+import { TreeNavigationComponent } from './components/tree-navigation/tree-navigation.component';
+import {MatTreeModule} from '@angular/material/tree';
 
 @NgModule({
   declarations: [InstallationsComponent, ListingComponent, MapComponent, MeasurementsComponent, AnalyseComponent,
-    AlarmsComponent, ReportsComponent, SettingsComponent],
+    AlarmsComponent, ReportsComponent, SettingsComponent, TreeNavigationComponent],
   imports: [
     CommonModule,
     InstallationsRoutingModule,
