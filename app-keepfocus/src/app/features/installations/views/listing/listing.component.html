@@ -1,1 +1,19 @@
-<p>listing works!</p>
+<div *ngIf="firstNode$ | async; let firstNode">
+<!--  <ul>-->
+<!--    <li *ngFor="let node of firstNode.children">Node: {{node?.id}}</li>-->
+<!--  </ul>-->
+  <mat-selection-list #nodes [multiple]="false">
+    <mat-list-option *ngFor="let node of firstNode.children" [value]="node">
+      <mat-icon mat-list-icon [svgIcon]="iconSearch(node)" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+      {{node?.name}}
+    </mat-list-option>
+  </mat-selection-list>
+
+  <p>
+    Option selected: {{nodes.selectedOptions.selected[0]?.value.id}}
+  </p>
+</div>
+
+
+
+

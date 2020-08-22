@@ -1,8 +1,8 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable, throwError} from 'rxjs';
-import {catchError, tap} from 'rxjs/operators';
-import {Node} from '../../../model/node.model';
+import {catchError, filter, find, first, map, tap} from 'rxjs/operators';
+import {FocusGroupNode} from '../../../model/focusGroupNode.model';
 
 @Injectable({
   providedIn: 'root'
@@ -13,11 +13,16 @@ export class InstallationsService {
   constructor(private http: HttpClient) {
   }
 
-  getNodeGroups(): Observable<Node[]> {
-    return this.http.get<Node[]>(this.focusGroupsUrl);
+  getNodeGroups(): Observable<FocusGroupNode[]> {
+    return this.http.get<FocusGroupNode[]>(this.focusGroupsUrl);
       // .pipe(
       //   catchError(this.handleError)
       // );
+  }
+
+  // fetch first node's children
+  getFirstNode(): Observable<FocusGroupNode> {
+    return this.http.get<FocusGroupNode[]>(this.focusGroupsUrl).pipe(map(data => data[0]));
   }
 
 
