@@ -1,65 +1,68 @@
 <mat-drawer-container class="example-container" hasBackdrop="true">
+
   <mat-drawer #drawer mode="over" style="width: 400px">
+
     <app-tree-navigation [focusGroups]="focusGroups"></app-tree-navigation>
+
   </mat-drawer>
 
 
   <mat-drawer-content class="installations-container">
 
-    <div class="installations-tree" (click)="drawer.toggle()"></div>
+    <div class="installations-tree-button" (click)="drawer.toggle()">X</div>
 
-      <div class="group">
+    <div class="group">
 
-        <div class="group-header">
+      <div class="group-header">
 
-          <div class="group-header-left">
-            <mat-icon class="ThirtyPixelIcon" svgIcon="company-28px" aria-hidden="false"
-                      aria-label="Example thumbs up SVG icon"></mat-icon>
-            <h2 class="mat-headline">
-              Company | Aarhus Omegns Boligforening
-            </h2>
-          </div>
-
-          <div class="group-header-right">
-
-<!--         <app-tabs></app-tabs>-->
-
-            <nav mat-tab-nav-bar>
-              <a mat-tab-link *ngFor="let link of links"
-                 (click)="activeLink = link"
-                 [active]="activeLink == link"
-                 [routerLink]="link.itemUrl"
-              class="kf-tab-link">
-                <div class="kf-tab-content">
-                  <mat-icon class="TwentyPixelIcon kf-tab-content-icon" [svgIcon]="link.iconName" aria-hidden="false"
-                            aria-label="Example thumbs up SVG icon"></mat-icon>
-                  <span class="kf-tab-content-label">{{link.itemName}}</span>
-                </div>
-              </a>
-            </nav>
-
-          </div>
+        <div class="group-header-left">
+          <mat-icon class="ThirtyPixelIcon" svgIcon="company-28px" aria-hidden="false"
+                    aria-label="Example thumbs up SVG icon"></mat-icon>
+          <h2 class="mat-headline">
+            Company | Aarhus Omegns Boligforening
+          </h2>
         </div>
 
-        <div class="group-content">
+        <div class="group-header-right">
 
-          <div class="group-content-header">
-            <mat-icon class="TwentyPixelIcon" svgIcon="listing" aria-hidden="false"
-                      aria-label="Example thumbs up SVG icon"></mat-icon>
-            <h3 class="mat-title">Listing | Housing Departments</h3>
-          </div>
+          <!--         <app-tabs></app-tabs>-->
 
-          <div class="group-content-info">
-
-            <app-listing [focusGroups]="focusGroups"></app-listing>
-            <router-outlet></router-outlet>
-
-          </div>
-
+          <nav mat-tab-nav-bar>
+            <a mat-tab-link *ngFor="let link of links"
+               (click)="activeLink = link"
+               [active]="activeLink == link"
+               [routerLink]="link.itemUrl"
+               class="kf-tab-link">
+              <div class="kf-tab-content">
+                <mat-icon class="TwentyPixelIcon kf-tab-content-icon" [svgIcon]="link.iconName" aria-hidden="false"
+                          aria-label="Example thumbs up SVG icon"></mat-icon>
+                <span class="kf-tab-content-label">{{link.itemName}}</span>
+              </div>
+            </a>
+          </nav>
 
         </div>
+      </div>
+
+      <div class="group-content">
+
+        <div class="group-content-header">
+          <mat-icon class="TwentyPixelIcon" svgIcon="listing" aria-hidden="false"
+                    aria-label="Example thumbs up SVG icon"></mat-icon>
+          <h3 class="mat-title">Listing | Housing Departments</h3>
+        </div>
+
+        <div class="group-content-info">
+
+          <app-listing [focusGroups]="focusGroups"></app-listing>
+          <router-outlet></router-outlet>
+
+        </div>
+
 
       </div>
+
+    </div>
 
   </mat-drawer-content>
 </mat-drawer-container>

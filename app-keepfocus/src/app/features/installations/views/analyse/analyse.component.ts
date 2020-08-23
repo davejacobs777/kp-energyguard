@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {FocusGroupNode} from '../../../../model/focusGroupNode.model';
+import {Observable, Subscription} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
+import {InstallationsFacade} from '../../services/installations.facade';
 
 @Component({
   selector: 'app-analyse',
@@ -8,18 +11,12 @@ import {FocusGroupNode} from '../../../../model/focusGroupNode.model';
   styleUrls: ['./analyse.component.scss']
 })
 export class AnalyseComponent implements OnInit {
-  focusGroups: FocusGroupNode[];
+  focusGroup$: Observable<FocusGroupNode>;
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private http: HttpClient, private installationsFacade: InstallationsFacade) {
   }
 
   ngOnInit(): void {
-    this.route.parent.data
-      .subscribe((data) => {
-        this.focusGroups = data.focusGroupsData;
-      });
-    console.log(this.focusGroups);
+    this.focusGroup$ = this.installationsFacade.focusGroupNode$;
   }
-
-
 }

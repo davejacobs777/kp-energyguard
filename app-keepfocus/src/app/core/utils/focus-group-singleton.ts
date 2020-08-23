@@ -1,17 +1,16 @@
 // import {HttpClient} from '@angular/common/http';
-//
+// import {FocusGroupNode} from '../../../model/focusGroupNode.model';
 // import {take} from 'rxjs/operators';
 // import {Observable} from 'rxjs';
-// import {FocusGroupNode} from '../../model/focusGroupNode.model';
 //
-// export const fetchFocusGroups = (http: HttpClient, focusGroupsUrl: string): () => Observable<FocusGroupNode[]> => {
+// export const fetchFocusGroups = (focusGroupData: FocusGroupNode[]): () => FocusGroupsSingleton => {
 //
 //   class FocusGroupsSingleton {
 //     private static uniqueInstance: FocusGroupsSingleton;
-//     readonly focusGroups$: Observable<FocusGroupNode[]>;
+//     readonly focusGroups: FocusGroupNode[];
 //
 //     private constructor() {
-//       this.focusGroups$ = http.get<FocusGroupNode[]>(focusGroupsUrl).pipe(take(1));
+//       this.focusGroups = focusGroupData;
 //     }
 //
 //     static getInstance(): FocusGroupsSingleton {
@@ -21,20 +20,16 @@
 //       return this.uniqueInstance;
 //     }
 //
-//     get getFocusGroups(): Observable<FocusGroupNode[]> {
-//       return this.focusGroups$;
+//     get getFocusGroups(): FocusGroupNode[] {
+//       return this.focusGroups;
 //     }
+//
 //   }
 //
-//   const focusGroupSingleton = FocusGroupsSingleton.getInstance();
-//
-//   const focusGroupNodes$: Observable<FocusGroupNode[]> = focusGroupSingleton.getFocusGroups;
-//
-//
-//   return () => focusGroupNodes$;
+//   return () => FocusGroupsSingleton.getInstance();
 // };
-//
-//
-//
-//
-//
+
+
+
+
+

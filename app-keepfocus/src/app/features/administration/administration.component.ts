@@ -2,6 +2,8 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 import {Observable, Subscription} from 'rxjs';
 import {map, tap} from 'rxjs/operators';
+import {InstallationsFacade} from '../installations/services/installations.facade';
+import {FocusGroupNode} from '../../model/focusGroupNode.model';
 
 @Component({
   selector: 'app-administration',
@@ -10,14 +12,14 @@ import {map, tap} from 'rxjs/operators';
 })
 export class AdministrationComponent implements OnInit, OnDestroy {
   focusGroupsUrl = 'api/focusGroups';
-  focusGroups$: Observable<any>;
+  focusGroup$: Observable<FocusGroupNode>;
   subscription: Subscription;
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private installationsFacade: InstallationsFacade) {
   }
 
   ngOnInit(): void {
-      this.focusGroups$ = this.http.get(this.focusGroupsUrl).pipe(tap(data => console.log(data)));
+      this.focusGroup$ = this.installationsFacade.focusGroupNode$;
   }
 
   ngOnDestroy(): void {
