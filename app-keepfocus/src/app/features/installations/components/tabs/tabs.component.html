@@ -1,14 +1,13 @@
-<!--<div class="group-nav">-->
-
-<!--  &lt;!&ndash; item&ndash;&gt;-->
-<!--  <a class="group-nav-item" [routerLink]="link.itemUrl" routerLinkActive="active" *ngFor="let link of links">-->
-<!--            <span class="group-nav-item-icon">-->
-<!--               <mat-icon class="TwentyPixelIcon" [svgIcon]="link.iconName" aria-hidden="false"-->
-<!--                         aria-label="Example thumbs up SVG icon"></mat-icon>-->
-<!--            </span>-->
-<!--    <span class="group-nav-item-name">-->
-<!--                <span>{{link.itemName}}</span>-->
-<!--            </span>-->
-<!--  </a>-->
-
-<!--</div>-->
+<nav mat-tab-nav-bar>
+  <a mat-tab-link *ngFor="let link of links"
+     (click)="activeLink = link"
+     [active]="activeLink == link"
+     [routerLink]="link.itemUrl"
+     class="kf-tab-link">
+    <div class="kf-tab-content">
+      <mat-icon class="TwentyPixelIcon kf-tab-content-icon" [svgIcon]="link.iconName" aria-hidden="false"
+                aria-label="Example thumbs up SVG icon"></mat-icon>
+      <span class="kf-tab-content-label">{{link.itemName}}</span>
+    </div>
+  </a>
+</nav>

@@ -1,40 +1,38 @@
 @import "variables";
 
-.group-nav {
-  flex: 1;
-  display: flex;
+.mat-tab-nav-bar, .mat-tab-header {
+  align-self: flex-end;
+  border-bottom: none;
+}
 
-  &-item {
+.mat-tab-links {
+  flex: 1;
+
+  display: flex;
+}
+
+.kf-tab-link {
+  height: 71px;
+  padding: 0 24px;
+  flex: 1;
+  min-width: 110px;
+
+  .kf-tab-content {
     flex: 1;
-    padding: 1rem 3rem;
-    //border-bottom: 2px solid $primary-500;
-    color: $primary-500;
-    text-decoration: none;
+    align-self: center;
+
     display: flex;
     flex-direction: column;
 
     &-icon {
       flex: 1;
-
-      display: flex;
-      align-items: center;
-
-      .TwentyPixelIcon {
-        flex: 1;
-        margin: 0;
-        align-self: center;
-      }
+      align-self: center;
+      margin: 0 0 4px;
     }
 
-    &-name {
+    &-label {
       flex: 1;
-      display: flex;
-      align-items: center;
-      span {
-        font-size: 14px;
-        align-self: center;
-        letter-spacing: 1px;
-      }
+      align-self: center;
     }
   }
 }

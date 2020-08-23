@@ -25,21 +25,8 @@
 
         <div class="group-header-right">
 
-          <!--         <app-tabs></app-tabs>-->
+          <app-tabs></app-tabs>
 
-          <nav mat-tab-nav-bar>
-            <a mat-tab-link *ngFor="let link of links"
-               (click)="activeLink = link"
-               [active]="activeLink == link"
-               [routerLink]="link.itemUrl"
-               class="kf-tab-link">
-              <div class="kf-tab-content">
-                <mat-icon class="TwentyPixelIcon kf-tab-content-icon" [svgIcon]="link.iconName" aria-hidden="false"
-                          aria-label="Example thumbs up SVG icon"></mat-icon>
-                <span class="kf-tab-content-label">{{link.itemName}}</span>
-              </div>
-            </a>
-          </nav>
 
         </div>
       </div>
@@ -54,7 +41,6 @@
 
         <div class="group-content-info">
 
-          <app-listing [focusGroups]="focusGroups"></app-listing>
           <router-outlet></router-outlet>
 
         </div>

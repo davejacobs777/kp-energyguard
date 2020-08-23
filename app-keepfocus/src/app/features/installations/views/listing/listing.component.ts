@@ -1,6 +1,9 @@
 import {AfterViewInit, Component, Input, OnInit, ViewChild} from '@angular/core';
 import {FocusGroupNode} from '../../../../model/focusGroupNode.model';
 import {iconSearch} from '../../utils/find-icon';
+import {Observable} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
+import {InstallationsFacade} from '../../services/installations.facade';
 
 @Component({
   selector: 'app-listing',
@@ -8,17 +11,15 @@ import {iconSearch} from '../../utils/find-icon';
   styleUrls: ['./listing.component.scss']
 })
 export class ListingComponent implements OnInit, AfterViewInit {
-  firstNode: FocusGroupNode;
+  focusGroup$: Observable<FocusGroupNode>;
   iconSearch = iconSearch();
   @ViewChild('nodes') nodes: any;
-  @Input() focusGroups: FocusGroupNode[];
 
-  constructor() { }
+  constructor(private http: HttpClient, private installationsFacade: InstallationsFacade) {
+  }
 
   ngOnInit(): void {
-    if (this.focusGroups) {
-      this.firstNode = this.focusGroups[0];
-    }
+    this.focusGroup$ = this.installationsFacade.focusGroupNode$;
   }
 
   ngAfterViewInit(): void {

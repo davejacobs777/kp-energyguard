@@ -64,44 +64,8 @@
 
         display: flex;
         justify-content: flex-end;
-        //group-nav
 
-        .mat-tab-nav-bar, .mat-tab-header {
-          align-self: flex-end;
-          border-bottom: none;
-        }
-
-        .mat-tab-links {
-          flex: 1;
-
-          display: flex;
-        }
-
-        .kf-tab-link {
-          height: 71px;
-            padding: 0 24px;
-            flex: 1;
-            min-width: 110px;
-
-          .kf-tab-content {
-            flex: 1;
-            align-self: center;
-
-            display: flex;
-            flex-direction: column;
-
-            &-icon {
-              flex: 1;
-              align-self: center;
-              margin: 0 0 4px;
-            }
-
-            &-label {
-              flex: 1;
-              align-self: center;
-            }
-          }
-        }
+        //tabs *****
 
       }
 

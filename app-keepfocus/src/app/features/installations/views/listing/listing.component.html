@@ -1,9 +1,9 @@
-<div *ngIf="firstNode">
+<div *ngIf="focusGroup$ | async; let focusGroup">
 <!--  <ul>-->
 <!--    <li *ngFor="let node of firstNode.children">Node: {{node?.id}}</li>-->
 <!--  </ul>-->
   <mat-selection-list #nodes [multiple]="false">
-    <mat-list-option *ngFor="let node of firstNode.children" [value]="node">
+    <mat-list-option *ngFor="let node of focusGroup.children" [value]="node">
       <mat-icon mat-list-icon [svgIcon]="iconSearch(node)" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
       {{node?.name}}
     </mat-list-option>
