@@ -11,44 +11,11 @@
 
     <div class="installations-tree-button" (click)="drawer.toggle()">X</div>
 
-    <div class="group">
-
-      <div class="group-header">
-
-        <div class="group-header-left">
-          <mat-icon class="ThirtyPixelIcon" svgIcon="company-28px" aria-hidden="false"
-                    aria-label="Example thumbs up SVG icon"></mat-icon>
-          <h2 class="mat-headline">
-            Company | Aarhus Omegns Boligforening
-          </h2>
-        </div>
-
-        <div class="group-header-right">
-
-          <app-tabs></app-tabs>
-
-
-        </div>
-      </div>
-
-      <div class="group-content">
-
-        <div class="group-content-header">
-          <mat-icon class="TwentyPixelIcon" svgIcon="listing" aria-hidden="false"
-                    aria-label="Example thumbs up SVG icon"></mat-icon>
-          <h3 class="mat-title">Listing | Housing Departments</h3>
-        </div>
-
-        <div class="group-content-info">
-
-          <router-outlet></router-outlet>
-
-        </div>
-
-
-      </div>
-
+    <!--    focus group-->
+    <div class="installations-content">
+      <app-focus-group></app-focus-group>
     </div>
+    <!--    focus group-->
 
   </mat-drawer-content>
 </mat-drawer-container>

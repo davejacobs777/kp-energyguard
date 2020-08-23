@@ -19,7 +19,6 @@
   min-height: calc(100vh - 128px);
   background-color: $primary-200;
 
-
   display: flex;
 
   .installations-tree-button {
@@ -28,79 +27,12 @@
     display: block;
   }
 
-  .group {
+  .installations-content {
     flex: 1;
-    height: 1fr;
 
-    border-radius: 4px;
-    background-color: white;
-    margin: 3rem;
-
-    display: flex;
-    flex-direction: column;
-
-    &-header {
-      flex: 0 0 72px;
-      padding: 0 2rem;
-      border-bottom: solid 1px $primary-300;
-
-      display: flex;
-      align-items: center;
-
-      &-left {
-        flex: 0 0 40%;
-        display: flex;
-        align-items: center;
-
-        margin-right: auto;
-        h2 {
-          display: inline-block;
-          margin: 0;
-        }
-      }
-
-      &-right {
-        flex: 0 0 60%;
-
-        display: flex;
-        justify-content: flex-end;
-
-        //tabs *****
-
-      }
-
-    }
-
-    &-content {
-      flex: 1;
-      height: 100%;
-      padding: 0 3rem;
-      background-color: $primary-100;
-
-      display: flex;
-      flex-direction: column;
-
-      &-header {
-        flex: 0 0 64px;
-        border-bottom: solid 1px $primary-300;
-
-        display: flex;
-        align-items: center;
-
-        h3 {
-          display: inline-block;
-          margin: 0;
-        }
-      }
-
-      &-info {
-        flex: 1;
-        height: 100%;
-
-        padding: 3rem 0;
-      }
-    }
+    // group *****
   }
+
 }
 
 //.installations-container {

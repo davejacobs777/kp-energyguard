@@ -12,6 +12,14 @@
 
 .icon-container {
   margin-right: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .mat-icon {
+      height: 20px;
+  }
 }
 
 

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {FocusGroupNode} from '../../model/focusGroupNode.model';
 import {ActivatedRoute} from '@angular/router';
 import {InstallationsFacade} from './services/installations.facade';
@@ -6,7 +6,8 @@ import {InstallationsFacade} from './services/installations.facade';
 @Component({
   selector: 'app-installations',
   templateUrl: './installations.component.html',
-  styleUrls: ['./installations.component.scss']
+  styleUrls: ['./installations.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class InstallationsComponent implements OnInit {
   focusGroups: FocusGroupNode[];
