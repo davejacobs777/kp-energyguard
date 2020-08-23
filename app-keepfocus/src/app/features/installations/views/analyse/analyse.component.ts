@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {FocusGroupNode} from '../../../../model/focusGroupNode.model';
 
 @Component({
   selector: 'app-analyse',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./analyse.component.scss']
 })
 export class AnalyseComponent implements OnInit {
+  focusGroups: FocusGroupNode[];
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) {
+  }
 
   ngOnInit(): void {
+    this.route.parent.data
+      .subscribe((data) => {
+        this.focusGroups = data.focusGroupsData;
+      });
+    console.log(this.focusGroups);
   }
+
 
 }

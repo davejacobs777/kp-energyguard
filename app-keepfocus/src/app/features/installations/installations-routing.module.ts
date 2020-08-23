@@ -8,11 +8,13 @@ import {AnalyseComponent} from './views/analyse/analyse.component';
 import {AlarmsComponent} from './views/alarms/alarms.component';
 import {ReportsComponent} from './views/reports/reports.component';
 import {SettingsComponent} from './views/settings/settings.component';
+import {InstallationsResolver} from './installations-resolver.service';
 
 const routes: Routes = [
   {
     path: '',
     component: InstallationsComponent,
+    resolve: { focusGroupsData: InstallationsResolver },
     children: [
       { path: '', redirectTo: 'listing', pathMatch: 'full' },
       {

@@ -3,12 +3,10 @@ import {
   OnInit,
   ChangeDetectionStrategy,
   EventEmitter,
-  Output, OnDestroy
+  Output, OnDestroy, Input
 } from '@angular/core';
 import {NestedTreeControl} from '@angular/cdk/tree';
 import {MatTreeNestedDataSource} from '@angular/material/tree';
-import {Subscription} from 'rxjs';
-import {InstallationsService} from '../../services/installations.service';
 import {FocusGroupNode} from '../../../../model/focusGroupNode.model';
 import {iconSearch} from '../../utils/find-icon';
 
@@ -18,33 +16,20 @@ import {iconSearch} from '../../utils/find-icon';
   styleUrls: ['./tree-navigation.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TreeNavigationComponent implements OnInit, OnDestroy {
+export class TreeNavigationComponent implements OnInit {
   treeControl = new NestedTreeControl<FocusGroupNode>(node => node.children);
   dataSource = new MatTreeNestedDataSource<FocusGroupNode>();
-  subscription: Subscription;
   iconSearch = iconSearch();
+  @Input() focusGroups: FocusGroupNode[];
 
-  constructor(private installationsService: InstallationsService) {
-    this.subscription = this.installationsService.getNodeGroups()
-      .subscribe(
-        (data: FocusGroupNode[]) => {
-          // console.log('nodes', data);
-          if (data) {
-            this.dataSource.data = data;
-          } else {
-            this.dataSource.data = [];
-          }
-        }
-      );
+  constructor() {
   }
 
   ngOnInit(): void {
+    this.dataSource.data = this.focusGroups;
+    console.log('tree nodes', this.focusGroups);
   }
 
   hasChild = (_: number, node: FocusGroupNode) => !!node.children && node.children.length > 0;
-
-  ngOnDestroy(): void {
-    this.subscription.unsubscribe();
-  }
 }
 

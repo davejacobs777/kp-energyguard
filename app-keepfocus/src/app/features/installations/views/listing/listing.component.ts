@@ -1,9 +1,5 @@
-import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
-import {InstallationsService} from '../../services/installations.service';
+import {AfterViewInit, Component, Input, OnInit, ViewChild} from '@angular/core';
 import {FocusGroupNode} from '../../../../model/focusGroupNode.model';
-import {Observable} from 'rxjs';
-import {map, tap} from 'rxjs/operators';
-import {MatSelectionList} from '@angular/material/list';
 import {iconSearch} from '../../utils/find-icon';
 
 @Component({
@@ -12,15 +8,17 @@ import {iconSearch} from '../../utils/find-icon';
   styleUrls: ['./listing.component.scss']
 })
 export class ListingComponent implements OnInit, AfterViewInit {
-  typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
-  firstNode$: Observable<FocusGroupNode>;
+  firstNode: FocusGroupNode;
   iconSearch = iconSearch();
   @ViewChild('nodes') nodes: any;
+  @Input() focusGroups: FocusGroupNode[];
 
-  constructor(private installationsService: InstallationsService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.firstNode$ = this.installationsService.getFirstNode().pipe(tap(data => console.log(data)));
+    if (this.focusGroups) {
+      this.firstNode = this.focusGroups[0];
+    }
   }
 
   ngAfterViewInit(): void {

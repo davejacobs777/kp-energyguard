@@ -1,6 +1,6 @@
 <mat-drawer-container class="example-container" hasBackdrop="true">
   <mat-drawer #drawer mode="over" style="width: 400px">
-    <app-tree-navigation></app-tree-navigation>
+    <app-tree-navigation [focusGroups]="focusGroups"></app-tree-navigation>
   </mat-drawer>
 
 
@@ -50,6 +50,7 @@
 
           <div class="group-content-info">
 
+            <app-listing [focusGroups]="focusGroups"></app-listing>
             <router-outlet></router-outlet>
 
           </div>

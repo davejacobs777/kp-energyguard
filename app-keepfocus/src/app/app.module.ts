@@ -12,6 +12,7 @@ import {MatOptionModule} from '@angular/material/core';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import {HeaderComponent} from './components/header/header.component';
+import {CoreModule} from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import {HeaderComponent} from './components/header/header.component';
     MaterialModule,
     ReactiveFormsModule,
     HttpClientModule,
+    CoreModule,
     MatOptionModule,
     MatFormFieldModule,
     MatSelectModule,
