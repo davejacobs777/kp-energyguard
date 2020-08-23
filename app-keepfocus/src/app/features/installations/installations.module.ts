@@ -13,10 +13,11 @@ import {SettingsComponent} from './views/settings/settings.component';
 import { TreeNavigationComponent } from './components/tree-navigation/tree-navigation.component';
 import {MatTreeModule} from '@angular/material/tree';
 import { FocusGroupComponent } from './components/focus-group/focus-group.component';
+import { TabsComponent } from './components/tabs/tabs.component';
 
 @NgModule({
   declarations: [InstallationsComponent, ListingComponent, MapComponent, MeasurementsComponent, AnalyseComponent,
-    AlarmsComponent, ReportsComponent, SettingsComponent, TreeNavigationComponent, FocusGroupComponent],
+    AlarmsComponent, ReportsComponent, SettingsComponent, TreeNavigationComponent, FocusGroupComponent, TabsComponent],
   imports: [
     CommonModule,
     InstallationsRoutingModule,

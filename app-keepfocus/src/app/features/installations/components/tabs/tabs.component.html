@@ -1,0 +1,14 @@
+<div class="group-nav">
+
+  <!-- item-->
+  <a class="group-nav-item" [routerLink]="link.itemUrl" routerLinkActive="active" *ngFor="let link of links">
+            <span class="group-nav-item-icon">
+               <mat-icon class="TwentyPixelIcon" [svgIcon]="link.iconName" aria-hidden="false"
+                         aria-label="Example thumbs up SVG icon"></mat-icon>
+            </span>
+    <span class="group-nav-item-name">
+                <span>{{link.itemName}}</span>
+            </span>
+  </a>
+
+</div>
