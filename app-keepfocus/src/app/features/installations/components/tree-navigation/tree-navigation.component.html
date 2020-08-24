@@ -9,7 +9,7 @@
         <div class="icon-container">
           <mat-icon [svgIcon]="iconSearch(node)" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
         </div>
-        {{node.name}}
+        <a class="node-link" (click)="treeNode(node)">{{node.name}}</a>
       </li>
     </mat-tree-node>
     <!-- This is the tree node template for expandable nodes -->
@@ -25,7 +25,7 @@
           <div class="icon-container">
             <mat-icon [svgIcon]="iconSearch(node)" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
           </div>
-          {{node.name}}
+          <a class="node-link" (click)="treeNode(node)">{{node.name}}</a>
         </div>
         <ul [class.example-tree-invisible]="!treeControl.isExpanded(node)">
           <ng-container matTreeNodeOutlet></ng-container>

@@ -9,6 +9,8 @@ import {NestedTreeControl} from '@angular/cdk/tree';
 import {MatTreeNestedDataSource} from '@angular/material/tree';
 import {FocusGroupNode} from '../../../../model/focusGroupNode.model';
 import {iconSearch} from '../../utils/find-icon';
+import {HttpClient} from '@angular/common/http';
+import {InstallationsFacade} from '../../services/installations.facade';
 
 @Component({
   selector: 'app-tree-navigation',
@@ -22,7 +24,7 @@ export class TreeNavigationComponent implements OnInit {
   iconSearch = iconSearch();
   @Input() focusGroups: FocusGroupNode[];
 
-  constructor() {
+  constructor(private installationsFacade: InstallationsFacade) {
   }
 
   ngOnInit(): void {
@@ -31,5 +33,10 @@ export class TreeNavigationComponent implements OnInit {
   }
 
   hasChild = (_: number, node: FocusGroupNode) => !!node.children && node.children.length > 0;
+
+  treeNode(node): void {
+    console.log(node);
+    this.installationsFacade.updateFocusGroupData(node);
+  }
 }
 

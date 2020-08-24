@@ -13,7 +13,7 @@ import {InstallationsFacade} from '../../services/installations.facade';
 export class ListingComponent implements OnInit, AfterViewInit {
   focusGroup$: Observable<FocusGroupNode>;
   iconSearch = iconSearch();
-  @ViewChild('nodes') nodes: any;
+  columnsToDisplay = ['icon', 'groupName', 'groupType', 'installations', 'meters', 'navigateIcon'];
 
   constructor(private http: HttpClient, private installationsFacade: InstallationsFacade) {
   }
@@ -23,7 +23,7 @@ export class ListingComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    console.log(this.nodes);
+
   }
 
 }

@@ -1,4 +1,4 @@
-<div class="group" *ngIf="focusGroup$ | async; let focusGroup">
+<div class="group" *ngIf="focusGroup$ | async; let focusGroup" [ngClass]="{'group-breadcrumb-space' : focusGroup.type !== 'Company'}">
 
   <div class="group-header">
 
@@ -23,7 +23,7 @@
     <div class="group-content-header">
       <mat-icon class="TwentyPixelIcon" svgIcon="listing" aria-hidden="false"
                 aria-label="Example thumbs up SVG icon"></mat-icon>
-      <h3 class="mat-title">Listing | {{focusGroup.type}}</h3>
+      <h3 class="mat-title">Listing | {{focusGroup.children[0].type}}s</h3>
     </div>
 
     <div class="group-content-info">
